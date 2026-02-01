@@ -8,6 +8,91 @@
   scroll-behavior: smooth;
 }
 
+/* --- Preloader Futuristic --- */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1a1a1d; /* Fondo más oscuro para contraste neon */
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+}
+
+#preloader.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+
+.ring:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    border-bottom: 4px solid var(--main-color);
+    animation: rotate 5s linear infinite;
+}
+
+.ring:nth-child(2) {
+    width: 70%;
+    height: 70%;
+    border-right: 4px solid #03e9f4; /* Cyan Cyberpunk Accent */
+    animation: rotate 5s linear infinite reverse;
+}
+
+.ring:nth-child(3) {
+    width: 40%;
+    height: 40%;
+    border-top: 4px solid #f403e8; /* Magenta Accent */
+    animation: rotate 3s linear infinite;
+}
+
+.loading-text {
+    color: var(--text-color);
+    font-family: 'Courier New', monospace;
+    font-weight: 700;
+    font-size: 1.2rem;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; transform: scale(0.9); }
+    50% { opacity: 1; transform: scale(1.1); text-shadow: 0 0 10px var(--main-color); }
+}
+
+
+/* --- Particles Background --- */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Detrás de todo */
+    background: transparent; /* Permite ver el gradiente del body si se desea, o lo reemplaza */
+}
 
 :root {
   /* Dracula Theme Inspired Palette */
@@ -43,14 +128,57 @@ body {
   color: var(--bg-color);
   letter-spacing: 0.1rem;
   font-weight: 600;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   margin-top: 2rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--text-color);
+  z-index: -1;
+  transition: 0.3s ease;
+}
+
+.btn:hover::before {
+  width: 100%;
 }
 
 .btn:hover {
-  box-shadow: none;
-  background: var(--text-color);
+  box-shadow: 0 0 2rem var(--main-color), 0 0 4rem var(--main-color); /* Neon Glow Intensified */
   color: var(--bg-color);
+  transform: translateY(-0.3rem); /* Slight lift */
+}
+
+/* ... existing logic ... */
+
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 3rem 1.5rem 3rem 0;
+  transition: 0.5s ease;
+}
+
+.social-media a:hover {
+  background: var(--main-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--main-color), 0 0 2rem var(--main-color); /* Neon Glow */
+  transform: translateY(-0.5rem) scale(1.1); /* Floating Lift */
 }
 
 section {
@@ -132,6 +260,7 @@ section {
 .inicio-contenedor h3 {
   font-size: 3.2rem;
   font-weight: 700;
+  font-family: 'Fira Code', monospace; /* Tech feel for greeting */
 }
 
 .inicio-contenedor h3:nth-of-type(2) {
@@ -140,6 +269,7 @@ section {
 
 span {
   color: var(--main-color);
+  font-family: 'Fira Code', monospace; /* Tech accent for highlights */
 }
 
 .inicio-contenedor h1 {
@@ -187,7 +317,12 @@ span {
 }
 
 .SobreMi-img img {
-  width: 35vw;
+  width: 32vw;
+  border-bottom: .5rem solid var(--main-color);
+  margin: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color); /* Subtle shadow for depth */
+  transform: translateY(-2rem);
 }
 
 .heading {
@@ -251,11 +386,16 @@ span {
   width: 250px;
   height: auto;
   margin-bottom: 0.5rem;
-  transition: transform 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy transition */
+  filter: grayscale(100%); /* Start subtle */
+  opacity: 0.8;
 }
 
 .tecnologia-item:hover img {
-  transform: scale(1.2);
+  transform: scale(1.1) translateY(-1rem);
+  filter: grayscale(0%); /* Full color on hover */
+  opacity: 1;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Lifted shadow */
 }
 
 .tecnologia-item span {
@@ -401,6 +541,19 @@ span {
 .Portfolio-box {
   position: relative;
   overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem var(--bg-color);
+  min-height: 400px; /* Increased height for better content spacing */
+  display: flex; /* Ensures content stretches */
+}
+
+.Portfolio-box img,
+.Portfolio-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the taller area */
+    min-height: 400px; /* Force minimum height on media too */
+    transition: 0.5s ease;
 }
 
 /* Imagen del proyecto */
@@ -606,13 +759,15 @@ span {
   height: 4rem;
   background: var(--main-color);
   border-radius: 0.8rem;
-  transition: 0.5s ease;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy transition */
   opacity: 0;
+  transform: translateY(2rem); /* Slide up effect */
   pointer-events: none;
 }
 
 .footer-iconTop a.show {
   opacity: 1;
+  transform: translateY(0);
   pointer-events: auto;
 }
 
@@ -813,4 +968,103 @@ span {
     text-align: center;
     margin-top: 2rem;
   }
+}
+
+/* --- Language Selector --- */
+.language-selector {
+    display: inline-flex;
+    gap: 0.5rem;
+    margin-left: 2rem;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 0.1rem solid var(--main-color);
+    color: var(--text-color);
+    padding: 0.4rem 0.8rem;
+    font-size: 1.4rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 0.5rem var(--main-color);
+}
+
+@media (max-width: 991px) {
+    .language-selector {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .language-selector {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+        width: 100%;
+        order: 3; /* Ensure it stays in flow */
+    }
+    
+    .lang-btn {
+        padding: 0.8rem 1.2rem;
+        font-size: 1.6rem;
+    }
+}
+
+/* --- Project Buttons --- */
+.Portfolio-box:hover .Portfolio-layer {
+  transform: translateY(0);
+}
+
+.project-links {
+    margin-top: 0.5rem; /* Reduced margin */
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-sm {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0.8rem; /* Compact padding */
+    background: transparent;
+    border: 1px solid var(--text-color);
+    border-radius: 0.4rem;
+    color: var(--text-color);
+    font-size: 1rem; /* Smaller font */
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-sm i {
+    font-size: 1.2rem; /* Smaller icon */
+}
+
+.btn-sm:hover {
+    background: var(--main-color);
+    border-color: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 5px var(--main-color);
+    transform: translateY(-2px);
+}
+
+.btn-sm.demo {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--main-color);
+}
+
+.btn-sm.demo:hover {
+    background: var(--main-color);
 }

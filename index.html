@@ -4,8 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Víctor Duarte - Portfolio</title>
-    <meta name="description" content="Portfolio de Víctor Duarte, Desarrollador Web FullStack y Diseñador Gráfico en Argentina. Especializado en Java, Spring Boot, HTML, CSS y JavaScript.">
+    <title>Víctor Duarte - Portfolio Web Developer</title>
+    <meta name="description" content="Portfolio de Víctor Duarte, Desarrollador Web FullStack (Java, Spring Boot, React) y Diseñador. Proyectos, habilidades y contacto.">
+    <meta name="keywords" content="Víctor Duarte, FullStack Developer, Java, Spring Boot, Web Developer Argentina, Portfolio, JavaScript, CSS, HTML">
+    <meta name="author" content="Víctor Duarte">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon (SVG Dinámico </>) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIiBmaWxsPSIjYmQ5M2Y5Ij4mbHQ7LyZndDs8L3RleHQ+PC9zdmc+">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -13,23 +19,32 @@
     <meta property="og:title" content="Víctor Duarte - Portfolio">
     <meta property="og:description" content="Portfolio de Víctor Duarte, Desarrollador Web FullStack y Diseñador Gráfico en Argentina.">
     <meta property="og:image" content="https://viktor033.github.io/IMG/PERFIL%20SIN%20FONDO.png">
-    <link rel="stylesheet" href="CSS/Style.css">
 
     <!--Estilo letras-->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600&display=swap" rel="stylesheet">
 
     <!--box icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- custom css -->
-
     <link rel="stylesheet" href="CSS/Style.css">
 </head>
 
 <body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <div class="ring"></div>
+            <span class="loading-text">&lt;/&gt;</span>
+        </div>
+    </div>
+
+    <!-- Fondo de Partículas -->
+    <div id="particles-js"></div>
 
     <!-- Header Diseño -->
 
@@ -40,11 +55,17 @@
         <div class="bx bx-menu" id="menu-icon"></div>
     
         <nav class="navbar" id="navbar">
-            <a href="#Inicio" class="active">Inicio</a>
-            <a href="#SobreMi">Sobre Mí</a>
-            <a href="#tecnologias">Tecnologías</a>
-            <a href="#Portfolio">Proyectos</a>
-            <a href="#Contacto">Contacto</a>         
+            <a href="#Inicio" class="active" data-i18n="nav.home">Inicio</a>
+            <a href="#SobreMi" data-i18n="nav.about">Sobre Mí</a>
+            <a href="#tecnologias" data-i18n="nav.tech">Tecnologías</a>
+            <a href="#Portfolio" data-i18n="nav.projects">Proyectos</a>
+            <a href="#Contacto" data-i18n="nav.contact">Contacto</a>
+            <div class="language-selector">
+                <button onclick="changeLanguage('es')" class="lang-btn active">ES</button>
+                <button onclick="changeLanguage('en')" class="lang-btn">EN</button>
+                <button onclick="changeLanguage('de')" class="lang-btn">DE</button>
+                <button onclick="changeLanguage('fr')" class="lang-btn">FR</button>
+            </div>
         </nav> 
     </header>
 
@@ -53,10 +74,10 @@
 
     <section class="Inicio" id="Inicio">
         <div class="inicio-contenedor">
-            <h3> Hola!! mi nombre es </h3>
+             <h3 data-i18n="hero.greeting"> Hola!! mi nombre es </h3>
             <h1> Victor Duarte </h1>
-            <h3> Soy <span class="multiple-text"></span></h3>
-            <p>HTML, CSS, Java, JavaScript, Swing, MySql, IntelliJ, NetBeans,
+            <h3> <span data-i18n="hero.role">Soy</span> <span class="multiple-text"></span></h3>
+            <p data-i18n="hero.description">HTML, CSS, Java, JavaScript, Swing, MySql,SpringBoot
                  Git, Photoshop, Canva</p>
            <div class="social-media">
                 <a href="https://github.com/Viktor033" target="_blank" rel="noopener noreferrer">
@@ -77,42 +98,42 @@
 
     <section class="SobreMi" id="SobreMi">
         <div class="SobreMi-img">
-            <img src="IMG/Foto_Victor_New.jpg" alt="">
+            <img src="IMG/Foto_Victor_New.jpg" alt="Foto de Perfil Víctor Duarte" loading="lazy">
         </div>
         <div class="SobreMi-Contenedor">
-            <h2 class="heading">Sobre <span>Mí</span></h2>
-            <h3>¡Desarrollador Web FullStack!</h3>
-            <p>"Soy Víctor, un desarrollador web de Argentina, apasionado por aprender y adaptarme a nuevas tecnologías. 
+            <h2 class="heading"><span data-i18n="about.title">Sobre</span> <span>Mí</span></h2>
+            <h3 data-i18n="about.subtitle">¡Desarrollador Web FullStack!</h3>
+            <p data-i18n="about.text">"Soy Víctor, un desarrollador web de Argentina, apasionado por aprender y adaptarme a nuevas tecnologías. 
                 A pesar de tener Esclerosis Múltiple, sigo enfocado en mi crecimiento profesional. Este portfolio refleja
                  mi dedicación y habilidades, y estoy listo para nuevos desafíos y proyectos innovadores."
                 Gracias por visitar mi portafolio y ser parte de mi viaje en la tecnología y el desarrollo web.
                 No dudes en ponerte en contacto para discutir cómo podemos colaborar o explorar nuevas oportunidades.
             </p>
-            <a href="CV_Victor_Duarte.pdf" download class="btn">Descargar CV</a>
+            <a href="CV_Victor_Duarte.pdf" download class="btn" data-i18n="about.cv">Descargar CV</a>
         </div>
     </section>
 
     <section class="tecnologias" id="tecnologias">
-        <h2 class="heading">Tecnologías que manejo</h2>
+        <h2 class="heading" data-i18n="tech.title">Tecnologías que manejo</h2>
         <div class="tecnologias-contenedor">
             <div class="tecnologias-slider">
                 <div class="tecnologia-item" data-descripcion="Estructura web semántica">
-                    <img src="IMG/HTML5_Logo.jpg" alt="Logo de HTML5">
+                    <img src="IMG/HTML5_Logo.jpg" alt="Logo de HTML5" loading="lazy">
                 </div>
                 <div class="tecnologia-item" data-descripcion="Estilos y diseño responsivo">
-                    <img src="IMG/CSS_logo.jpg" alt="Logo de CSS3">
+                    <img src="IMG/CSS_logo.jpg" alt="Logo de CSS3" loading="lazy">
                 </div>
                 <div class="tecnologia-item" data-descripcion="Interactividad y lógica frontend">
-                    <img src="IMG/JS_logo.jpg" alt="Logo de JavaScript">
+                    <img src="IMG/JS_logo.jpg" alt="Logo de JavaScript" loading="lazy">
                 </div>
                 <div class="tecnologia-item" data-descripcion="Desarrollo Backend robusto">
-                    <img src="IMG/Java_logo.jpg" alt="Logo de Java">
+                    <img src="IMG/Java_logo.jpg" alt="Logo de Java" loading="lazy">
                 </div>
                 <div class="tecnologia-item" data-descripcion="Framework Java para microservicios">
-                    <img src="IMG/SpringBoot_logo.jpg" alt="Logo de Spring Boot">
+                    <img src="IMG/SpringBoot_logo.jpg" alt="Logo de Spring Boot" loading="lazy">
                 </div>
                 <div class="tecnologia-item" data-descripcion="Gestión de bases de datos relacionales">
-                    <img src="IMG/MySql_logo.jpg" alt="Logo de MySQL">
+                    <img src="IMG/MySql_logo.jpg" alt="Logo de MySQL" loading="lazy">
                 </div>
             </div>
         </div>
@@ -124,56 +145,78 @@
         <h2 class="heading"> <span> Proyectos</span></h2>
         <div class="Portfolio-contenedor">
             <div class="Portfolio-box">
-                <video src="VIDEOS/ecommerce_project.mp4" poster="IMG/ecommerce_project.png" muted loop playsinline></video>
+                <video src="VIDEOS/ecommerce_project.mp4" poster="IMG/ecommerce_project.png" muted loop playsinline preload="none"></video>
                 <div class="Portfolio-layer">
-                    <h4>E-commerce Viandas</h4>
-                    <p>Plataforma completa de venta de alimentos desarrollada con Spring Boot y Java. Gestión de usuarios, carrito y panel administrativo.</p>
-                    <!-- <a href="#" target="_blank" rel="noopener noreferrer"><i class='bx bx-link-external'></i></a> -->
+                    <h4 data-i18n="projects.ecommerce.title">E-commerce Viandas</h4>
+                    <p data-i18n="projects.ecommerce.desc">Plataforma completa de venta de alimentos desarrollada con Spring Boot y Java. Gestión de usuarios, carrito y panel administrativo.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Viktor033" target="_blank" rel="noopener noreferrer" class="btn-sm" title="GitHub">
+                            <i class='bx bxl-github'></i> <span data-i18n="projects.viewCode">Ver Código</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="Portfolio-box">
-                <video src="VIDEOS/dental_project.mp4" poster="IMG/dental_project.png" muted loop playsinline></video>
+                <video src="VIDEOS/dental_project.mp4" poster="IMG/dental_project.png" muted loop playsinline preload="none"></video>
                 <div class="Portfolio-layer">
-                    <h4>Gestión Odontológica</h4>
-                    <p>Sistema integral para clínicas dentales. Turnos, historia clínica digital y odontograma interactivo. (Java Web).</p>
-                    <!-- <a href="#" target="_blank" rel="noopener noreferrer"><i class='bx bx-link-external'></i></a> -->
+                    <h4 data-i18n="projects.dental.title">Gestión Odontológica</h4>
+                    <p data-i18n="projects.dental.desc">Sistema integral para clínicas dentales. Turnos, historia clínica digital y odontograma interactivo. (Java Web).</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Viktor033" target="_blank" rel="noopener noreferrer" class="btn-sm" title="GitHub">
+                            <i class='bx bxl-github'></i> <span data-i18n="projects.viewCode">Ver Código</span>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="Portfolio-box">
-                <video src="VIDEOS/desarrollo_web.mp4" poster="IMG/PROGRAM.jpg" muted loop playsinline></video>
+                <video src="VIDEOS/desarrollo_web.mp4" poster="IMG/PROGRAM.jpg" muted loop playsinline preload="none"></video>
                 <div class="Portfolio-layer">
-                    <h4>Desarrollo Web</h4>
-                    <p>Creación de un portfolio personal, mostrando trabajos y servicios que 
+                    <h4 data-i18n="projects.web.title">Desarrollo Web</h4>
+                    <p data-i18n="projects.web.desc">Creación de un portfolio personal, mostrando trabajos y servicios que 
                         realiza, (Landing page) usando HTML, CSS y JS</p>
-                    <!--<a href="#"><i class='bx bx-link-external'></i></a>-->
+                    <div class="project-links">
+                        <a href="https://github.com/Viktor033" target="_blank" rel="noopener noreferrer" class="btn-sm" title="GitHub">
+                            <i class='bx bxl-github'></i> <span data-i18n="projects.viewCode">Ver Código</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="Portfolio-box">
-                <video src="VIDEOS/diseno_grafico.mp4" poster="IMG/FOLLETO.jpg" muted loop playsinline></video>
+                <video src="VIDEOS/diseno_grafico.mp4" poster="IMG/FOLLETO.jpg" muted loop playsinline preload="none"></video>
                 <div class="Portfolio-layer">
-                    <h4>Diseño Grafico</h4>
-                    <p>Creacion de un folleto publicitario para una empresa de turismo regional</p>
-                   <!-- <a href="#"><i class='bx bx-link-external'></i></a>-->
+                    <h4 data-i18n="projects.design.title">Diseño Grafico</h4>
+                    <p data-i18n="projects.design.desc">Creacion de un folleto publicitario para una empresa de turismo regional</p>
                 </div>
             </div>
 
             <div class="Portfolio-box">
-                <video src="VIDEOS/app_escritorio.mp4" poster="IMG/PELUQUERIA_CANINA.jpg" muted loop playsinline></video>
+                <video src="VIDEOS/app_escritorio.mp4" poster="IMG/PELUQUERIA_CANINA.jpg" muted loop playsinline preload="none"></video>
                 <div class="Portfolio-layer">
-                    <h4>Aplicaciones de Escritorio</h4>
-                    <p>Aplicaciones de escritorio utilizando las tecnologías de Java, Swing, MySQL</p>
-                   <!--<a href="#"><i class='bx bx-link-external'></i></a>--> 
+                    <h4 data-i18n="projects.desktop.title">Aplicaciones de Escritorio</h4>
+                    <p data-i18n="projects.desktop.desc">Aplicaciones de escritorio utilizando las tecnologías de Java, Swing, MySQL</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Viktor033" target="_blank" rel="noopener noreferrer" class="btn-sm" title="GitHub">
+                            <i class='bx bxl-github'></i> <span data-i18n="projects.viewCode">Ver Código</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="Portfolio-box">
-                <video src="VIDEOS/landing_page.mp4" poster="IMG/FRENTE-LOCAL.02.jpg" muted loop playsinline></video>
+                <video src="VIDEOS/landing_page.mp4" poster="IMG/FRENTE-LOCAL.02.jpg" muted loop playsinline preload="none"></video>
             <div class="Portfolio-layer">
-                <h4>Landing Page</h4>
-                <p>Página de Aterrizaje para consultorio Kinesiológico</p>
-                <a href="https://daialvarezkine.netlify.app/" target="_blank" rel="noopener noreferrer"><i class='bx bx-link-external'></i></a>
+                <h4 data-i18n="projects.landing.title">Landing Page</h4>
+                <p data-i18n="projects.landing.desc">Página de Aterrizaje para consultorio Kinesiológico</p>
+                <div class="project-links">
+                    <a href="https://github.com/Viktor033" target="_blank" rel="noopener noreferrer" class="btn-sm" title="GitHub">
+                        <i class='bx bxl-github'></i> <span data-i18n="projects.viewCode">Ver Código</span>
+                    </a>
+                    <a href="https://daialvarezkine.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-sm demo" title="Live Demo">
+                        <i class='bx bx-link-external'></i> <span data-i18n="projects.viewSite">Ver Sitio</span>
+                    </a>
+                </div>
             </div>
             </div>
 
@@ -183,39 +226,29 @@
 
     <!-- Diseño Seccion Contacto -->
     <section class="Contacto" id="Contacto">
-        <h2 class="heading">Contacta <span>Me!</span></h2>
+        <h2 class="heading"><span data-i18n="contact.title">Contacta</span> <span>Me!</span></h2>
 
         <form id="contactForm" action="https://formsubmit.co/viktor.duarte.033@gmail.com" method="POST">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
             <div class="input-box">
-                <input type="text" name="name" id="nombres" placeholder="Nombre completo" autocomplete="off" required>
-                <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="off" required>
+                <input type="text" name="name" id="nombres" placeholder="Nombre completo" autocomplete="off" required data-i18n-placeholder="contact.name">
+                <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="off" required data-i18n-placeholder="contact.email">
             </div>
             <div class="input-box">
-                <input type="text" name="phone" id="Telefono" placeholder="Número de Teléfono" autocomplete="off">
-                <input type="text" name="subject" id="Asunto" placeholder="Asunto del Email" autocomplete="off" required>
+                <input type="text" name="phone" id="Telefono" placeholder="Número de Teléfono" autocomplete="off" data-i18n-placeholder="contact.phone">
+                <input type="text" name="subject" id="Asunto" placeholder="Asunto del Email" autocomplete="off" required data-i18n-placeholder="contact.subject">
             </div>
-            <textarea name="message" id="Mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-            <input type="submit" value="Enviar" class="btn" id="submitBtn">
+            <textarea name="message" id="Mensaje" cols="30" rows="10" placeholder="Mensaje" required data-i18n-placeholder="contact.message"></textarea>
+            <input type="submit" value="Enviar" class="btn" id="submitBtn" data-i18n-value="contact.send">
         </form>
 
-        <!-- Modal de Éxito -->
-        <div id="modal-success" class="modal">
-            <div class="modal-content">
-                <i class='bx bxs-check-circle'></i>
-                <h3>¡Mensaje Enviado!</h3>
-                <p>Gracias por contactarme. Te responderé a la brevedad.</p>
-                <button id="close-modal" class="btn">Cerrar</button>
-            </div>
-        </div>
-    </section>
     </section>
 
     <!--Diseño footer -->
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2024 by VK_Dev_Web | All Rights Reserved.</p>
+            <p data-i18n="footer.text">Copyright &copy; 2024 by VK_Dev_Web | All Rights Reserved.</p>
         </div>
 
         <div class="footer-iconTop">
@@ -227,11 +260,24 @@
         </a>
     </footer>
 
+    <!-- Modal de Éxito (Movido aquí para evitar conflictos de z-index) -->
+    <div id="modal-success" class="modal">
+        <div class="modal-content">
+            <i class='bx bxs-check-circle'></i>
+            <h3 data-i18n="modal.title">¡Mensaje Enviado!</h3>
+            <p data-i18n="modal.message">Gracias por contactarme. Te responderé a la brevedad.</p>
+            <button id="close-modal" class="btn" data-i18n="modal.close">Cerrar</button>
+        </div>
+    </div>
+
     <!--- Scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--- Typed -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
     <!-- custom js -->
     <script src='JS/script.js'></script>
