@@ -4,14 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Personal Porfolio</title>
+    <title>Víctor Duarte - Portfolio</title>
+    <meta name="description" content="Portfolio de Víctor Duarte, Desarrollador Web FullStack y Diseñador Gráfico en Argentina. Especializado en Java, Spring Boot, HTML, CSS y JavaScript.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://viktor033.github.io/">
+    <meta property="og:title" content="Víctor Duarte - Portfolio">
+    <meta property="og:description" content="Portfolio de Víctor Duarte, Desarrollador Web FullStack y Diseñador Gráfico en Argentina.">
+    <meta property="og:image" content="https://viktor033.github.io/IMG/PERFIL%20SIN%20FONDO.png">
     <link rel="stylesheet" href="CSS/Style.css">
 
     <!--Estilo letras-->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2? familia= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,600 & display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600&display=swap" rel="stylesheet">
 
     <!--box icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -28,12 +36,13 @@
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
         
-        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
     
         <nav class="navbar" id="navbar">
             <a href="#Inicio" class="active">Inicio</a>
-            <a href="#SobreMi">Sobre mi</a>
-            <a href="#tecnologias">Tecnologias</a>
+            <a href="#SobreMi">Sobre Mí</a>
+            <a href="#tecnologias">Tecnologías</a>
             <a href="#Portfolio">Proyectos</a>
             <a href="#Contacto">Contacto</a>         
         </nav> 
@@ -44,21 +53,22 @@
 
     <section class="Inicio" id="Inicio">
         <div class="inicio-contenedor">
-            <h3>Hola!! mi nombre es </h3>
+            <h3> Hola!! mi nombre es </h3>
             <h1> Victor Duarte </h1>
-            <h3> soy <span class="multiple-text"></span></h3>
+            <h3> Soy <span class="multiple-text"></span></h3>
             <p>HTML, CSS, Java, JavaScript, Swing, MySql, IntelliJ, NetBeans,
                  Git, Photoshop, Canva</p>
            <div class="social-media">
-                <a href="https://github.com/Viktor033" target="_blank">
+                <a href="https://github.com/Viktor033" target="_blank" rel="noopener noreferrer">
                     <i class='bx bxl-github'></i>
-                <a href="https://www.linkedin.com/in/victor-duarte-04a1b1261" target="_blank">
+                </a>
+                <a href="https://www.linkedin.com/in/victor-duarte-04a1b1261" target="_blank" rel="noopener noreferrer">
                     <i class='bx bxl-linkedin'></i></a>
             </div>
         </div>
 
         <div class="inicio-img">
-            <img src="/IMG/LOGO2.png" alt="" class="front-image">
+            <img src="IMG/LOGO2.png" alt="" class="front-image">
         </div>
 
     </section>
@@ -67,42 +77,42 @@
 
     <section class="SobreMi" id="SobreMi">
         <div class="SobreMi-img">
-            <img src="/IMG/PERFIL SIN FONDO.png" alt="">
+            <img src="IMG/Foto_Victor_New.jpg" alt="">
         </div>
         <div class="SobreMi-Contenedor">
-            <h2 class="heading">Sobre <span>Mi</span></h2>
-            <h3>desarrollador web FullStack!</h3>
+            <h2 class="heading">Sobre <span>Mí</span></h2>
+            <h3>¡Desarrollador Web FullStack!</h3>
             <p>"Soy Víctor, un desarrollador web de Argentina, apasionado por aprender y adaptarme a nuevas tecnologías. 
                 A pesar de tener Esclerosis Múltiple, sigo enfocado en mi crecimiento profesional. Este portfolio refleja
                  mi dedicación y habilidades, y estoy listo para nuevos desafíos y proyectos innovadores."
-                Gracias por visitar mi portafolio ademas ser parte de mi viaje en la tecnología y el desarrollo web.
+                Gracias por visitar mi portafolio y ser parte de mi viaje en la tecnología y el desarrollo web.
                 No dudes en ponerte en contacto para discutir cómo podemos colaborar o explorar nuevas oportunidades.
             </p>
-
+            <a href="CV_Victor_Duarte.pdf" download class="btn">Descargar CV</a>
         </div>
     </section>
 
     <section class="tecnologias" id="tecnologias">
-        <h2 class="heading">Tecnologias que manejo</h2>
+        <h2 class="heading">Tecnologías que manejo</h2>
         <div class="tecnologias-contenedor">
             <div class="tecnologias-slider">
-                <div class="tecnologia-item">
-                    <img src="IMG/HTML5_Logo.jpg" alt="HTML5">
+                <div class="tecnologia-item" data-descripcion="Estructura web semántica">
+                    <img src="IMG/HTML5_Logo.jpg" alt="Logo de HTML5">
                 </div>
-                <div class="tecnologia-item">
-                    <img src="IMG/CSS_logo.jpg" alt="CSS3">
+                <div class="tecnologia-item" data-descripcion="Estilos y diseño responsivo">
+                    <img src="IMG/CSS_logo.jpg" alt="Logo de CSS3">
                 </div>
-                <div class="tecnologia-item">
-                    <img src="IMG/JS_logo.jpg" alt="JavaScript">
+                <div class="tecnologia-item" data-descripcion="Interactividad y lógica frontend">
+                    <img src="IMG/JS_logo.jpg" alt="Logo de JavaScript">
                 </div>
-                <div class="tecnologia-item">
-                    <img src="IMG/Java_logo.jpg" alt="Java">
+                <div class="tecnologia-item" data-descripcion="Desarrollo Backend robusto">
+                    <img src="IMG/Java_logo.jpg" alt="Logo de Java">
                 </div>
-                <div class="tecnologia-item">
-                    <img src="IMG/SpringBoot_logo.jpg" alt="Spring Boot">
+                <div class="tecnologia-item" data-descripcion="Framework Java para microservicios">
+                    <img src="IMG/SpringBoot_logo.jpg" alt="Logo de Spring Boot">
                 </div>
-                <div class="tecnologia-item">
-                    <img src="IMG/MySql_logo.jpg" alt="MySQL-logo">
+                <div class="tecnologia-item" data-descripcion="Gestión de bases de datos relacionales">
+                    <img src="IMG/MySql_logo.jpg" alt="Logo de MySQL">
                 </div>
             </div>
         </div>
@@ -114,17 +124,34 @@
         <h2 class="heading"> <span> Proyectos</span></h2>
         <div class="Portfolio-contenedor">
             <div class="Portfolio-box">
-                <img src="/IMG/PROGRAM.jpg" alt="imagenes de proyectos">
+                <video src="VIDEOS/ecommerce_project.mp4" poster="IMG/ecommerce_project.png" muted loop playsinline></video>
+                <div class="Portfolio-layer">
+                    <h4>E-commerce Viandas</h4>
+                    <p>Plataforma completa de venta de alimentos desarrollada con Spring Boot y Java. Gestión de usuarios, carrito y panel administrativo.</p>
+                    <!-- <a href="#" target="_blank" rel="noopener noreferrer"><i class='bx bx-link-external'></i></a> -->
+                </div>
+            </div>
+
+            <div class="Portfolio-box">
+                <video src="VIDEOS/dental_project.mp4" poster="IMG/dental_project.png" muted loop playsinline></video>
+                <div class="Portfolio-layer">
+                    <h4>Gestión Odontológica</h4>
+                    <p>Sistema integral para clínicas dentales. Turnos, historia clínica digital y odontograma interactivo. (Java Web).</p>
+                    <!-- <a href="#" target="_blank" rel="noopener noreferrer"><i class='bx bx-link-external'></i></a> -->
+                </div>
+            </div>
+            <div class="Portfolio-box">
+                <video src="VIDEOS/desarrollo_web.mp4" poster="IMG/PROGRAM.jpg" muted loop playsinline></video>
                 <div class="Portfolio-layer">
                     <h4>Desarrollo Web</h4>
-                    <p>Creacion de un portfolio personal, mostrando trabajos y servicios que 
-                        realisa, (Landing page) usando HTML, CSS y JS</p>
+                    <p>Creación de un portfolio personal, mostrando trabajos y servicios que 
+                        realiza, (Landing page) usando HTML, CSS y JS</p>
                     <!--<a href="#"><i class='bx bx-link-external'></i></a>-->
                 </div>
             </div>
 
             <div class="Portfolio-box">
-                <img src="/IMG/FOLLETO.jpg" alt="imagenes de proyectos">
+                <video src="VIDEOS/diseno_grafico.mp4" poster="IMG/FOLLETO.jpg" muted loop playsinline></video>
                 <div class="Portfolio-layer">
                     <h4>Diseño Grafico</h4>
                     <p>Creacion de un folleto publicitario para una empresa de turismo regional</p>
@@ -133,20 +160,20 @@
             </div>
 
             <div class="Portfolio-box">
-                <img src="/IMG/PELUQUERIA_CANINA.jpg">
+                <video src="VIDEOS/app_escritorio.mp4" poster="IMG/PELUQUERIA_CANINA.jpg" muted loop playsinline></video>
                 <div class="Portfolio-layer">
-                    <h4>APLICACIONES DE ESCRITORIO</h4>
-                    <p>Aplicacione de escritorio utilizando las tegnologias de Java, swing, MySql</p>
+                    <h4>Aplicaciones de Escritorio</h4>
+                    <p>Aplicaciones de escritorio utilizando las tecnologías de Java, Swing, MySQL</p>
                    <!--<a href="#"><i class='bx bx-link-external'></i></a>--> 
                 </div>
             </div>
 
             <div class="Portfolio-box">
-            <img src="/IMG/FRENTE-LOCAL.02.jpg">
+                <video src="VIDEOS/landing_page.mp4" poster="IMG/FRENTE-LOCAL.02.jpg" muted loop playsinline></video>
             <div class="Portfolio-layer">
                 <h4>Landing Page</h4>
-                <p>Pagina de Aterrizage para consultorio Kinesiologico</p>
-                <a href="https://daialvarezkine.netlify.app/"><i class='bx bx-link-external'></i></a>-->
+                <p>Página de Aterrizaje para consultorio Kinesiológico</p>
+                <a href="https://daialvarezkine.netlify.app/" target="_blank" rel="noopener noreferrer"><i class='bx bx-link-external'></i></a>
             </div>
             </div>
 
@@ -158,29 +185,46 @@
     <section class="Contacto" id="Contacto">
         <h2 class="heading">Contacta <span>Me!</span></h2>
 
-        <form action="#">
+        <form id="contactForm" action="https://formsubmit.co/viktor.duarte.033@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
             <div class="input-box">
-                <input type="text" name="" id="nombres" placeholder="Nombre completo" autocomplete="off">
-                <input type="email" name="" id="email" placeholder="E-mail" autocomplete="off">
+                <input type="text" name="name" id="nombres" placeholder="Nombre completo" autocomplete="off" required>
+                <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="off" required>
             </div>
             <div class="input-box">
-                <input type="text" name="" id="Telefono" placeholder="Numero de Telefono" autocomplete="off">
-                <input type="text" name="" id="Asunto" placeholder="Asunto del Email" autocomplete="off">
+                <input type="text" name="phone" id="Telefono" placeholder="Número de Teléfono" autocomplete="off">
+                <input type="text" name="subject" id="Asunto" placeholder="Asunto del Email" autocomplete="off" required>
             </div>
-            <textarea name="" id="Mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-            <input type="submit" value="Enviar" class="btn" id="send">
+            <textarea name="message" id="Mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+            <input type="submit" value="Enviar" class="btn" id="submitBtn">
         </form>
+
+        <!-- Modal de Éxito -->
+        <div id="modal-success" class="modal">
+            <div class="modal-content">
+                <i class='bx bxs-check-circle'></i>
+                <h3>¡Mensaje Enviado!</h3>
+                <p>Gracias por contactarme. Te responderé a la brevedad.</p>
+                <button id="close-modal" class="btn">Cerrar</button>
+            </div>
+        </div>
+    </section>
     </section>
 
     <!--Diseño footer -->
     <footer class="footer">
         <div class="footer-text">
-            <p>Copyright &copy; 2024 by VK_Dev_Web| All Rights Reserved.</p>
+            <p>Copyright &copy; 2024 by VK_Dev_Web | All Rights Reserved.</p>
         </div>
 
         <div class="footer-iconTop">
             <a href="#Inicio"><i class='bx bxs-chevrons-up'></i></a>
         </div>
+        
+        <a href="https://wa.me/540379154636696?text=Hola,%20quisiera%20más%20información" target="_blank" class="whatsapp-btn">
+            <i class='bx bxl-whatsapp'></i>
+        </a>
     </footer>
 
     <!--- Scroll reveal -->

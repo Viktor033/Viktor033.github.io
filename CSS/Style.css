@@ -8,12 +8,16 @@
   scroll-behavior: smooth;
 }
 
+
 :root {
-  --bg-color: #1f242d;
-  --second-bg-color: #323946;
-  --text-color: #fff;
-  --main-color: #0ef;
+  /* Dracula Theme Inspired Palette */
+  --bg-color: #282a36;        /* Dark Grey/Purple Background */
+  --second-bg-color: #44475a; /* Slightly lighter selection color */
+  --text-color: #f8f8f2;      /* Off-white text */
+  --main-color: #bd93f9;      /* Dracula Purple */
 }
+
+
 
 html {
   font-size: 62.5%;
@@ -22,12 +26,38 @@ html {
 
 body {
   background: var(--bg-color);
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(189, 147, 249, 0.05) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(189, 147, 249, 0.05) 0%, transparent 20%);
+  background-attachment: fixed;
   color: var(--text-color);
 }
 
-.section {
+.btn {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--bg-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+  margin-top: 2rem;
+}
+
+.btn:hover {
+  box-shadow: none;
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
+section {
   min-height: 100vh;
+  min-height: 100dvh; /* Mejor soporte móvil */
   padding: 10rem 9% 2rem;
+  scroll-margin-top: 6rem; /* Ajustado para evitar franja de sección anterior */
 }
 
 .header {
@@ -36,7 +66,8 @@ body {
   left: 0;
   width: 100%;
   padding: 2rem 9%;
-  background: var(--bg-color);
+  background: rgba(40, 42, 54, 0.9);
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,8 +103,10 @@ body {
   display: none;
 }
 
+
+
 .Inicio {
-  padding: 11.8rem;
+  /* Padding inherited from section, specific adjustments if needed */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,6 +146,10 @@ span {
   font-size: 5.6rem;
   font-weight: 700;
   line-height: 1.3;
+  background: linear-gradient(45deg, #bd93f9, #ff79c6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .inicio-contenedor P {
@@ -141,7 +178,7 @@ span {
 }
 
 .SobreMi {
-  padding: 5rem;
+  /* padding inherited */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,9 +211,7 @@ span {
 }
 
 .tecnologias {
-  padding: 5rem;
-  padding-bottom: 15rem;
-  padding-top: 21rem;
+  /* padding inherited */
   background-color: var(--bg-color);
 }
 
@@ -252,14 +287,76 @@ span {
   }
 }
 
+/* Modal de Éxito */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: var(--second-bg-color);
+    padding: 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    width: 90%;
+    max-width: 40rem;
+    position: relative;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 1rem var(--main-color);
+    transform: scale(0.5);
+    transition: all 0.3s ease;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+}
+
+.modal-content i {
+    font-size: 6rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.modal-content h3 {
+    font-size: 2.4rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.modal-content p {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    margin-bottom: 3rem;
+}
+
+.modal-content button {
+    cursor: pointer;
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
   .tecnologia-item {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .tecnologia-item img {
-    width: 60px;
+    width: 130px;
   }
 
   .tecnologia-item .descripcion {
@@ -267,17 +364,18 @@ span {
   }
 }
 .Portfolio {
-  padding: 11.8rem;
+  /* Inherits min-height 100vh */
   background: var(--second-bg-color);
-
+  padding-top: 2rem; /* Reduced from 10rem inheritance to remove top gap */
+  padding-bottom: 2rem;
 }
 
 .Portfolio h2 {
-  margin: 4rem;
+  margin: 3rem 0 4rem; /* Adjusted margins for title */
 }
 
 .Portfolio-contenedor {
-  margin-bottom: 15rem;
+  margin-bottom: 4rem; /* Reduced from 15rem to fit screen better */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
@@ -293,10 +391,7 @@ span {
   display: flex;
 }
 
-.Portfolio-box img {
-  width: 100%;
-  transition: 0.5s ease;
-}
+
 
 .Portfolio-box:hover img {
   transform: scale(1.1);
@@ -309,11 +404,7 @@ span {
 }
 
 /* Imagen del proyecto */
-.Portfolio-box img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+
 
 /* Capa que aparece al hacer hover */
 .Portfolio-box .Portfolio-layer {
@@ -322,7 +413,10 @@ span {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
+  width: 100%;
+  height: 100%;
+  background: rgba(189, 147, 249, 0.1);
+  backdrop-filter: blur(5px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -330,7 +424,11 @@ span {
   text-align: center;
   padding: 0 4rem;
   transform: translateY(100%);
-  transition: transform 0.5s ease;
+  transition: 0.5s ease;
+  
+  /* Configuración base para el split */
+  height: 100%; 
+  top: 0; 
 }
 
 /* Al hacer hover sobre la caja, se muestra la capa */
@@ -399,17 +497,33 @@ span {
   height: 250px; /* Puedes ajustar esto según tus imágenes */
 }
 
-.Portfolio-box img {
-  object-fit: cover;
+.Portfolio-box img,
+.Portfolio-box video {
+  width: 100%;
   height: 100%;
+  object-fit: cover;
+  transition: height 0.5s ease; /* Transición suave de altura */
+  display: block;
+}
+
+/* Efecto Split: Al hacer hover, video ocupa la mitad superior */
+.Portfolio-box:hover img,
+.Portfolio-box:hover video {
+  height: 50%;
+}
+
+.Portfolio-box:hover .Portfolio-layer {
+  transform: translateY(0);
+  height: 50%; /* Ocupa la mitad inferior */
+  top: 50%; /* Empieza desde la mitad */
+  background: var(--bg-color); /* Fondo sólido para legibilidad */
+  border-top: 2px solid var(--main-color);
 }
 
 .Portfolio-layer p {
   font-size: 1.4rem;
   line-height: 1.5;
-  max-height: 60px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /* Eliminado max-height para mostrar todo el texto */
 }
 
 .Contacto h2 {
@@ -480,22 +594,58 @@ span {
 }
 
 .footer-iconTop a {
+  position: fixed;
+  bottom: 9rem; /* Encima del de WhatsApp */
+  right: 2rem;
+  z-index: 999;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: 0.8rem;
+  width: 4rem;
+  height: 4rem;
   background: var(--main-color);
   border-radius: 0.8rem;
   transition: 0.5s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.footer-iconTop a.show {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .footer-iconTop a:hover {
-  box-shadow: 0 0 1rem;
+  box-shadow: 0 0 1rem var(--main-color);
 }
 
 .footer-iconTop a i {
   font-size: 2.4rem;
   color: var(--second-bg-color);
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 6rem;
+  height: 6rem;
+  background: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  background: #20ba5a;
 }
 
 /* RESPONSIVE */
@@ -512,7 +662,7 @@ span {
   }
 
   section {
-    padding: 10rem 3% 2rem;
+    padding: 8rem 3% 2rem;
   }
 
   .servicios {
@@ -596,6 +746,38 @@ span {
   .Portfolio-contenedor {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Ajustes Tarjetas Móvil: Layout Fijo (Stack) */
+  .Portfolio-box {
+      flex-direction: column;
+      height: auto;
+  }
+  
+  .Portfolio-box img, 
+  .Portfolio-box video,
+  .Portfolio-box:hover img,
+  .Portfolio-box:hover video {
+      height: 250px; /* Altura fija para visual media */
+  }
+
+  .Portfolio-layer,
+  .Portfolio-box:hover .Portfolio-layer {
+      transform: translateY(0);
+      position: relative;
+      height: auto;
+      top: 0;
+      background: var(--bg-color);
+      border-top: 2px solid var(--main-color);
+      padding: 2rem;
+  }
+
+  /* Ajustes botones flotantes para no tapar */
+  .whatsapp-btn {
+      width: 5rem; height: 5rem; font-size: 3rem; bottom: 1.5rem; right: 1.5rem;
+  }
+  .footer-iconTop a {
+      bottom: 8rem; right: 1.5rem; width: 3.5rem; height: 3.5rem;
+  }
 }
 
 @media (max-width: 617px) {
@@ -606,7 +788,7 @@ span {
 
 @media (max-width: 450px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
 
   .Contacto form .input-box input {

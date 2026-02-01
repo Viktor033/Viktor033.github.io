@@ -7,32 +7,50 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
-/*===================== Activar sección al hacer scrol ===================*/
+/*===================== Intersection Observer para Nav Activo ===================*/
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
+const observerOptions = {
+    threshold: 0.3
+};
 
-        if (top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            let id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + id) {
+                    link.classList.add('active');
+                }
             });
         }
     });
-    /*===================== Barra de navegación fija ===================*/
-    let header = document.querySelector('header');
+}, observerOptions);
+
+sections.forEach(section => {
+    observer.observe(section);
+});
+
+
+
+/*===================== Scroll Event Optimizado (Sticky Header & Menú) ===================*/
+let header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
     header.classList.toggle('sticky', window.scrollY > 100);
 
-    /*===================== Eliminar ícono  ===================*/
+    /* Mostrar botón volver arriba */
+    let footerIconTop = document.querySelector('.footer-iconTop a');
+    if (footerIconTop) {
+        footerIconTop.classList.toggle('show', window.scrollY > 100);
+    }
+
+    /* Eliminar ícono y cerrar menú al hacer scroll */
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
-};
+});
 
 /*===================== Revelar al hacer scroll  ===================*/
 
@@ -53,55 +71,61 @@ ScrollReveal().reveal('.inicio-contenedor p, .SobreMi-Contenedor', { origin: 'ri
 /*===================== sTypeado JS  ===================*/
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Desarrollador Java Web', 'Community Mannager', 'Diseñador grafico'],
+    strings: ['Desarrollador Java Web', 'Community Manager', 'Diseñador Gráfico'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop: true,
 });
 
-/*===================== BOTON ENVIAR A WHATSAPP ================*/
-const enviarFormulario = (event) => {
-    event.preventDefault(); // Prevenir comportamiento predeterminado
-
-    let nombres = document.getElementById('nombres').value;
-    let mensaje = document.getElementById('Mensaje').value;
-    let numero = "540379154636696";  // El número debe ser una cadena.
-
-    if (nombres && mensaje) { // Asegúrate de que los campos no estén vacíos
-        let url = `https://wa.me/${numero}?text=Hola%20mi%20nombre%20es%20${encodeURIComponent(nombres)},%20Asunto:%20${encodeURIComponent(mensaje)}`;
-        window.open(url, '_blank');
-    } else {
-        alert("Por favor, completa todos los campos antes de enviar.");
-    }
-}
-document.getElementById("send").addEventListener('click', enviarFormulario);
+/*===================== FORMULARIO ESTÁNDAR (Sin JS) ================*/
+/* El formulario ahora se envía directamente por HTML a FormSubmit.co */
 
 /*======================= Barra en Movimiento tecnologias ==========================*/
 
 
-    const slider = document.querySelector('.tecnologias-slider');
-    const clone = slider.innerHTML;
-    slider.innerHTML += clone; // Añadimos el clon para un scroll continuo
+const slider = document.querySelector('.tecnologias-slider');
+const clone = slider.innerHTML;
+slider.innerHTML += clone; // Añadimos el clon para un scroll continuo
 
-    // Pausar animación cuando el mouse está sobre una imagen
-    const tecnologiaItems = document.querySelectorAll('.tecnologia-item');
+// Pausar animación cuando el mouse está sobre una imagen
+const tecnologiaItems = document.querySelectorAll('.tecnologia-item');
 
-    tecnologiaItems.forEach(item => {
-        item.addEventListener('mouseover', () => {
-            slider.style.animationPlayState = 'paused'; // Pausa la animación
-            const descripcion = document.createElement('div');
-            descripcion.className = 'descripcion';
-            descripcion.textContent = item.getAttribute('data-descripcion');
-            item.appendChild(descripcion);
-        });
-
-        item.addEventListener('mouseout', () => {
-            slider.style.animationPlayState = 'running'; // Reanuda la animación
-            const descripcion = item.querySelector('.descripcion');
-            if (descripcion) {
-                descripcion.remove(); // Elimina la descripción cuando el mouse sale
-            }
-        });
+tecnologiaItems.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        slider.style.animationPlayState = 'paused'; // Pausa la animación
+        const descripcion = document.createElement('div');
+        descripcion.className = 'descripcion';
+        descripcion.textContent = item.getAttribute('data-descripcion');
+        item.appendChild(descripcion);
     });
+
+    item.addEventListener('mouseout', () => {
+        slider.style.animationPlayState = 'running'; // Reanuda la animación
+        const descripcion = item.querySelector('.descripcion');
+        if (descripcion) {
+            descripcion.remove(); // Elimina la descripción cuando el mouse sale
+        }
+    });
+});
+
+
+/*======================= Video Hover Effect ==========================*/
+const portfolioBoxes = document.querySelectorAll('.Portfolio-box');
+
+portfolioBoxes.forEach(box => {
+    const video = box.querySelector('video');
+
+    if (video) {
+        box.addEventListener('mouseenter', () => {
+            video.play().catch(error => {
+                console.log("Video play unable to start:", error);
+            });
+        });
+
+        box.addEventListener('mouseleave', () => {
+            video.pause();
+        });
+    }
+});
 
