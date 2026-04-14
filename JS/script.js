@@ -4,7 +4,15 @@ const translations = {
         nav: { home: "Inicio", about: "Sobre Mí", tech: "Tecnologías", projects: "Proyectos", contact: "Contacto" },
         hero: { greeting: "Hola!! mi nombre es", role: "Soy", description: "HTML, CSS, Java, JavaScript, Swing, MySql, SpringBoot, Git, Photoshop, Canva" },
         about: { title: "Sobre", subtitle: "¡Desarrollador Web FullStack!", text: "\"Soy Víctor, un desarrollador web de Argentina, apasionado por aprender y adaptarme a nuevas tecnologías. A pesar de tener Esclerosis Múltiple, sigo enfocado en mi crecimiento profesional. Este portfolio refleja mi dedicación y habilidades, y estoy listo para nuevos desafíos y proyectos innovadores.\" Gracias por visitar mi portafolio y ser parte de mi viaje en la tecnología y el desarrollo web. No dudes en ponerte en contacto para discutir cómo podemos colaborar o explorar nuevas oportunidades.", cv: "Descargar CV" },
-        tech: { title: "Tecnologías que manejo" },
+        tech: { 
+            title: "Tecnologías que manejo",
+            html: "Estructura web semántica y SEO",
+            css: "Diseño responsivo y animaciones modernas",
+            js: "Interactividad dinámica y APIS",
+            java: "Lógica de servidor y robustez",
+            springboot: "Microservicios y aplicaciones escalables",
+            mysql: "Bases de datos eficientes y seguras"
+        },
         projects: {
             ecommerce: { title: "E-commerce Viandas", desc: "Plataforma completa de venta de alimentos desarrollada con Spring Boot y Java. Gestión de usuarios, carrito y panel administrativo." },
             dental: { title: "Gestión Odontológica", desc: "Sistema integral para clínicas dentales. Turnos, historia clínica digital y odontograma interactivo. (Java Web)." },
@@ -24,7 +32,15 @@ const translations = {
         nav: { home: "Home", about: "About Me", tech: "Tech Stack", projects: "Projects", contact: "Contact" },
         hero: { greeting: "Hello!! my name is", role: "I am", description: "HTML, CSS, Java, JavaScript, Swing, MySQL, SpringBoot, Git, Photoshop, Canva" },
         about: { title: "About", subtitle: "FullStack Web Developer!", text: "\"I'm Víctor, a web developer from Argentina, passionate about learning and adapting to new technologies. Despite having Multiple Sclerosis, I remain focused on my professional growth. This portfolio reflects my dedication and skills, and I am ready for new challenges and innovative projects.\" Thank you for visiting my portfolio and being part of my journey in technology and web development. Feel free to contact me to discuss how we can collaborate or explore new opportunities.", cv: "Download CV" },
-        tech: { title: "Technologies I use" },
+        tech: { 
+            title: "Technologies I use",
+            html: "Semantic web structure and SEO",
+            css: "Responsive design and modern animations",
+            js: "Dynamic interactivity and APIs",
+            java: "Server logic and robustness",
+            springboot: "Microservices and scalable apps",
+            mysql: "Efficient and secure databases"
+        },
         projects: {
             ecommerce: { title: "Food E-commerce", desc: "Complete food sales platform developed with Spring Boot and Java. User management, cart, and admin panel." },
             dental: { title: "Dental Management", desc: "Comprehensive system for dental clinics. Appointments, digital medical records, and interactive odontogram. (Java Web)." },
@@ -269,16 +285,10 @@ document.addEventListener('DOMContentLoaded', () => {
         tecnologiaItems.forEach(item => {
             item.addEventListener('mouseover', () => {
                 slider.style.animationPlayState = 'paused';
-                const descripcion = document.createElement('div');
-                descripcion.className = 'descripcion';
-                descripcion.textContent = item.getAttribute('data-descripcion');
-                item.appendChild(descripcion);
             });
 
             item.addEventListener('mouseout', () => {
                 slider.style.animationPlayState = 'running';
-                const descripcion = item.querySelector('.descripcion');
-                if (descripcion) descripcion.remove();
             });
         });
     }
