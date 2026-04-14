@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
         particlesJS("particles-js", {
             "particles": {
                 "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
-                "color": { "value": "#bd93f9" },
+                "color": { "value": "#00d2ff" },
                 "shape": {
                     "type": "circle",
                     "stroke": { "width": 0, "color": "#000000" },
@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "line_linked": {
                     "enable": true,
                     "distance": 150,
-                    "color": "#bd93f9",
+                    "color": "#00d2ff",
                     "opacity": 0.5, /* Increased line opacity */
                     "width": 1
                 },

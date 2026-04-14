@@ -99,7 +99,7 @@
   --bg-color: #282a36;        /* Dark Grey/Purple Background */
   --second-bg-color: #44475a; /* Slightly lighter selection color */
   --text-color: #f8f8f2;      /* Off-white text */
-  --main-color: #bd93f9;      /* Dracula Purple */
+  --main-color: #00d2ff;      /* Cyan/Blue Accent (matching logo) */
 }
 
 
@@ -112,8 +112,8 @@ html {
 body {
   background: var(--bg-color);
   background-image: 
-    radial-gradient(circle at 10% 20%, rgba(189, 147, 249, 0.05) 0%, transparent 20%),
-    radial-gradient(circle at 90% 80%, rgba(189, 147, 249, 0.05) 0%, transparent 20%);
+    radial-gradient(circle at 10% 20%, rgba(0, 210, 255, 0.05) 0%, transparent 20%),
+    radial-gradient(circle at 90% 80%, rgba(0, 210, 255, 0.05) 0%, transparent 20%);
   background-attachment: fixed;
   color: var(--text-color);
 }
@@ -276,10 +276,11 @@ span {
   font-size: 5.6rem;
   font-weight: 700;
   line-height: 1.3;
-  background: linear-gradient(45deg, #bd93f9, #ff79c6);
+  background: linear-gradient(45deg, #00d2ff, #03e9f4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-shadow: 0 0 10px rgba(0, 210, 255, 0.2);
 }
 
 .inicio-contenedor P {
@@ -395,7 +396,7 @@ span {
   transform: scale(1.1) translateY(-1rem);
   filter: grayscale(0%); /* Full color on hover */
   opacity: 1;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3); /* Lifted shadow */
+  box-shadow: 0 10px 20px rgba(0, 210, 255, 0.4), 0 0 1.5rem var(--main-color); /* Blue glow on hover */
 }
 
 .tecnologia-item span {
@@ -568,7 +569,7 @@ span {
   height: 100%;
   width: 100%;
   height: 100%;
-  background: rgba(189, 147, 249, 0.1);
+  background: rgba(0, 210, 255, 0.1);
   backdrop-filter: blur(5px);
   display: flex;
   justify-content: center;
