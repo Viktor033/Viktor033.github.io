@@ -279,8 +279,10 @@ document.addEventListener('DOMContentLoaded', () => {
     portfolioBoxes.forEach(box => {
         const video = box.querySelector('video');
         if (video) {
-            box.addEventListener('mouseenter', () => video.play().catch(e => console.log("Autoplay error", e)));
-            box.addEventListener('mouseleave', () => video.pause());
+            // Pausar al entrar (hover)
+            box.addEventListener('mouseenter', () => video.pause());
+            // Reanudar al salir
+            box.addEventListener('mouseleave', () => video.play().catch(e => console.log("Play error", e)));
         }
     });
 
