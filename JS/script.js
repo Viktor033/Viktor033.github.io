@@ -165,6 +165,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let sections = document.querySelectorAll('section');
     let navLinks = document.querySelectorAll('header nav a');
 
+    // Cerrar menú al hacer click en un link (para móvil)
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menuIcon.classList.remove('bx-x');
+            navbar.classList.remove('active');
+        });
+    });
+
     window.onscroll = () => {
         sections.forEach(sec => {
             let top = window.scrollY;
