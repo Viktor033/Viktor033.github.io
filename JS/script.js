@@ -6,12 +6,12 @@ const translations = {
         about: { title: "Sobre", subtitle: "¡Desarrollador Web FullStack!", text: "\"Soy Víctor, un desarrollador web de Argentina, apasionado por aprender y adaptarme a nuevas tecnologías. A pesar de tener Esclerosis Múltiple, sigo enfocado en mi crecimiento profesional. Este portfolio refleja mi dedicación y habilidades, y estoy listo para nuevos desafíos y proyectos innovadores.\" Gracias por visitar mi portafolio y ser parte de mi viaje en la tecnología y el desarrollo web. No dudes en ponerte en contacto para discutir cómo podemos colaborar o explorar nuevas oportunidades.", cv: "Descargar CV" },
         tech: { 
             title: "Tecnologías que manejo",
-            html: "Estructura web semántica y SEO",
-            css: "Diseño responsivo y animaciones modernas",
-            js: "Interactividad dinámica y APIS",
-            java: "Lógica de servidor y robustez",
-            springboot: "Microservicios y aplicaciones escalables",
-            mysql: "Bases de datos eficientes y seguras"
+            html: "Estructura web semántica y SEO (Ej: tags &lt;main&gt;, &lt;article&gt;)",
+            css: "Diseño responsivo y animaciones modernas (Ej: Flexbox, Grid, Keyframes)",
+            js: "Interactividad dinámica y APIS (Ej: Event listeners, Fetch API)",
+            java: "Lógica de servidor y robustez (Ej: POO, Colecciones, Streams)",
+            springboot: "Microservicios y apps escalables (Ej: REST APIs, Security, JPA)",
+            mysql: "Bases de datos eficientes y seguras (Ej: Queries SQL, Relaciones, Joins)"
         },
         projects: {
             ecommerce: { title: "E-commerce Viandas", desc: "Plataforma completa de venta de alimentos desarrollada con Spring Boot y Java. Gestión de usuarios, carrito y panel administrativo." },
@@ -38,12 +38,12 @@ const translations = {
         about: { title: "About", subtitle: "FullStack Web Developer!", text: "\"I'm Víctor, a web developer from Argentina, passionate about learning and adapting to new technologies. Despite having Multiple Sclerosis, I remain focused on my professional growth. This portfolio reflects my dedication and skills, and I am ready for new challenges and innovative projects.\" Thank you for visiting my portfolio and being part of my journey in technology and web development. Feel free to contact me to discuss how we can collaborate or explore new opportunities.", cv: "Download CV" },
         tech: { 
             title: "Technologies I use",
-            html: "Semantic web structure and SEO",
-            css: "Responsive design and modern animations",
-            js: "Dynamic interactivity and APIs",
-            java: "Server logic and robustness",
-            springboot: "Microservices and scalable apps",
-            mysql: "Efficient and secure databases"
+            html: "Semantic structure and SEO (Eg: &lt;main&gt;, &lt;article&gt; tags)",
+            css: "Responsive design and animations (Eg: Flexbox, Grid, Keyframes)",
+            js: "Dynamic interactivity and APIs (Eg: Event listeners, Fetch API)",
+            java: "Server logic and robustness (Eg: OOP, Collections, Streams)",
+            springboot: "Microservices and scalable apps (Eg: REST APIs, Security, JPA)",
+            mysql: "Efficient and secure databases (Eg: SQL Queries, Relations, Joins)"
         },
         projects: {
             ecommerce: { title: "Food E-commerce", desc: "Complete food sales platform developed with Spring Boot and Java. User management, cart, and admin panel." },
