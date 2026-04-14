@@ -25,11 +25,7 @@ const translations = {
         },
         contact: { title: "Contacta", name: "Nombre completo", email: "E-mail", phone: "Número de Teléfono", subject: "Asunto del Email", message: "Mensaje", send: "Enviar" },
         modal: { title: "¡Mensaje Enviado!", message: "Gracias por contactarme. Te responderé a la brevedad.", close: "Cerrar" },
-        footer: { 
-            text: "Copyright &copy; 2024 by VK_Dev_Web | All Rights Reserved.",
-            links: "Enlaces Rápidos",
-            contact: "Contacto"
-        },
+        footer: { text: "Copyright &copy; 2024 by VK_Dev_Web | All Rights Reserved." },
         typed: ['Desarrollador Java Web', 'Community Manager', 'Diseñador Gráfico']
     },
     en: {
@@ -57,11 +53,7 @@ const translations = {
         },
         contact: { title: "Contact", name: "Full Name", email: "E-mail", phone: "Phone Number", subject: "Email Subject", message: "Message", send: "Send" },
         modal: { title: "Message Sent!", message: "Thanks for contacting me. I will reply shortly.", close: "Close" },
-        footer: { 
-            text: "Copyright &copy; 2024 by VK_Dev_Web | All Rights Reserved.",
-            links: "Quick Links",
-            contact: "Contact"
-        },
+        footer: { text: "Copyright &copy; 2024 by VK_Dev_Web | All Rights Reserved." },
         typed: ['Java Web Developer', 'Community Manager', 'Graphic Designer']
     },
     de: {
@@ -81,11 +73,7 @@ const translations = {
         },
         contact: { title: "Kontaktieren", name: "Vollständiger Name", email: "E-Mail", phone: "Telefonnummer", subject: "Betreff", message: "Nachricht", send: "Senden" },
         modal: { title: "Nachricht Gesendet!", message: "Danke für Ihre Nachricht. Ich werde mich in Kürze melden.", close: "Schließen" },
-        footer: { 
-            text: "Copyright &copy; 2024 by VK_Dev_Web | Alle Rechte vorbehalten.",
-            links: "Schnelllinks",
-            contact: "Kontakt"
-        },
+        footer: { text: "Copyright &copy; 2024 by VK_Dev_Web | Alle Rechte vorbehalten." },
         typed: ['Java Webentwickler', 'Community Manager', 'Grafikdesigner']
     },
     fr: {
@@ -105,11 +93,7 @@ const translations = {
         },
         contact: { title: "Contactez", name: "Nom complet", email: "E-mail", phone: "Numéro de téléphone", subject: "Sujet", message: "Message", send: "Envoyer" },
         modal: { title: "Message Envoyé!", message: "Merci de m'avoir contacté. Je vous répondrai sous peu.", close: "Fermer" },
-        footer: { 
-            text: "Copyright &copy; 2024 by VK_Dev_Web | Tous droits réservés.",
-            links: "Liens Rapides",
-            contact: "Contact"
-        },
+        footer: { text: "Copyright &copy; 2024 by VK_Dev_Web | Tous droits réservés." },
         typed: ['Développeur Java Web', 'Community Manager', 'Graphiste']
     }
 };
