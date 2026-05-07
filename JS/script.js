@@ -159,7 +159,12 @@ const translations = {
         },
         contact: { title: "Kontaktieren", name: "Vollständiger Name", email: "E-Mail", phone: "Telefonnummer", subject: "Betreff", message: "Nachricht", send: "Senden" },
         modal: { title: "Nachricht Gesendet!", message: "Danke für Ihre Nachricht. Ich werde mich in Kürze melden.", close: "Schließen" },
-        footer: { text: "Copyright &copy; 2024 by VK_Dev_Web | Alle Rechte vorbehalten." },
+        footer: { 
+            text: "Copyright &copy; 2024 by VK_Dev_Web | Alle Rechte vorbehalten.",
+            role: "FullStack-Entwickler & KI-Spezialist",
+            links: "Schnelllinks",
+            contact: "Kontakt"
+        },
         typed: ['Webentwickler', 'Community Manager', 'Grafikdesigner']
     },
     fr: {
@@ -179,7 +184,12 @@ const translations = {
         },
         contact: { title: "Contactez", name: "Nom complet", email: "E-mail", phone: "Numéro de téléphone", subject: "Sujet", message: "Message", send: "Envoyer" },
         modal: { title: "Message Envoyé!", message: "Merci de m'avoir contacté. Je vous répondrai sous peu.", close: "Fermer" },
-        footer: { text: "Copyright &copy; 2024 by VK_Dev_Web | Tous droits réservés." },
+        footer: { 
+            text: "Copyright &copy; 2024 by VK_Dev_Web | Tous droits réservés.",
+            role: "Développeur FullStack & Spécialiste IA",
+            links: "Liens Rapides",
+            contact: "Contact"
+        },
         typed: ['Développeur Web', 'Community Manager', 'Graphiste']
     }
 };
