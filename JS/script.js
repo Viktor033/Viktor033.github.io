@@ -14,17 +14,60 @@ const translations = {
             mysql: "Bases de datos eficientes y seguras"
         },
         projects: {
-            ecommerce: { title: "E-commerce Viandas", desc: "Plataforma completa de venta de alimentos desarrollada con Spring Boot y Java. Gestión de usuarios, carrito y panel administrativo." },
-            dental: { title: "Gestión Odontológica", desc: "Sistema integral para clínicas dentales. Turnos, historia clínica digital y odontograma interactivo. (Java Web)." },
-            web: { title: "Desarrollo Web", desc: "Creación de un portfolio personal, mostrando trabajos y servicios que realiza." },
-            design: { title: "Diseño Gráfico", desc: "Creación de un folleto publicitario para una empresa de turismo regional." },
-            desktop: { title: "Aplicaciones de Escritorio", desc: "Aplicaciones de escritorio utilizando las tecnologías de Java, Swing, MySQL." },
-            landing: { title: "Landing Page", desc: "Página de Aterrizaje para consultorio Kinesiológico." },
+            ecommerce: { 
+                title: "E-commerce Viandas", 
+                desc: "Plataforma completa de venta de alimentos.",
+                fullDesc: "Sistema robusto para la venta de viandas con gestión de inventario y pedidos en tiempo real.",
+                tech: ["Java", "Spring Boot", "MySQL", "JWT", "Thymeleaf"],
+                features: ["Gestión de usuarios con roles", "Carrito de compras dinámico", "Panel administrativo completo", "Seguridad con JWT"]
+            },
+            dental: { 
+                title: "Gestión Odontológica", 
+                desc: "Sistema integral para clínicas dentales.",
+                fullDesc: "Aplicación para la gestión de turnos, historias clínicas y odontogramas interactivos.",
+                tech: ["Java Web", "Servlets", "MySQL", "JSP", "Bootstrap"],
+                features: ["Odontograma dinámico", "Gestión de historias clínicas", "Agenda de turnos", "Exportación de reportes"]
+            },
+            web: { 
+                title: "Desarrollo Web", 
+                desc: "Creación de un portfolio personal y servicios.",
+                fullDesc: "Diseño y desarrollo de sitios web modernos y optimizados.",
+                tech: ["HTML5", "CSS3", "JavaScript", "ScrollReveal", "Particles.js"],
+                features: ["Diseño responsivo", "Animaciones avanzadas", "Optimización SEO", "Soporte multi-idioma"]
+            },
+            design: { 
+                title: "Diseño Gráfico", 
+                desc: "Creación de folleto publicitario de turismo.",
+                fullDesc: "Diseño visual impactante para marcas y servicios regionales.",
+                tech: ["Photoshop", "Illustrator", "Canva"],
+                features: ["Composición visual", "Teoría del color", "Diseño para impresión", "Identidad de marca"]
+            },
+            desktop: { 
+                title: "Aplicaciones de Escritorio", 
+                desc: "Aplicaciones con Java, Swing, MySQL.",
+                fullDesc: "Software de gestión local para diversos rubros comerciales.",
+                tech: ["Java", "Swing", "MySQL", "JDBC"],
+                features: ["Instaladores locales", "Base de datos persistente", "Interfaces amigables", "Control de stock"]
+            },
+            landing: { 
+                title: "Landing Page", 
+                desc: "Página para consultorio Kinesiológico.",
+                fullDesc: "Página de aterrizaje optimizada para conversión de clientes locales.",
+                tech: ["HTML5", "CSS3", "JavaScript", "Netlify"],
+                features: ["Formulario de contacto", "Diseño Mobile-First", "Integración con WhatsApp", "Carga rápida"]
+            },
             viewCode: "Ver Código",
-            viewSite: "Ver Sitio"
+            viewSite: "Ver Sitio",
+            viewDetails: "Detalles"
         },
         contact: { title: "Contacta", name: "Nombre completo", email: "E-mail", phone: "Número de Teléfono", subject: "Asunto del Email", message: "Mensaje", send: "Enviar" },
-        modal: { title: "¡Mensaje Enviado!", message: "Gracias por contactarme. Te responderé a la brevedad.", close: "Cerrar" },
+        modal: { 
+            title: "¡Mensaje Enviado!", 
+            message: "Gracias por contactarme. Te responderé a la brevedad.", 
+            close: "Cerrar",
+            features: "Funcionalidades Clave",
+            techStack: "Stack Tecnológico"
+        },
         footer: { text: "Copyright &copy; 2024 by VK_Dev_Web | All Rights Reserved." },
         typed: ['Desarrollador Java Web', 'Community Manager', 'Diseñador Gráfico']
     },
@@ -42,17 +85,60 @@ const translations = {
             mysql: "Efficient and secure databases"
         },
         projects: {
-            ecommerce: { title: "Food E-commerce", desc: "Complete food sales platform developed with Spring Boot and Java. User management, cart, and admin panel." },
-            dental: { title: "Dental Management", desc: "Comprehensive system for dental clinics. Appointments, digital medical records, and interactive odontogram. (Java Web)." },
-            web: { title: "Web Development", desc: "Creation of a personal portfolio, showcasing work and services offered." },
-            design: { title: "Graphic Design", desc: "Creation of an advertising brochure for a regional tourism company." },
-            desktop: { title: "Desktop Applications", desc: "Desktop applications using Java, Swing, MySQL technologies." },
-            landing: { title: "Landing Page", desc: "Landing Page for a Kinesiology office." },
+            ecommerce: { 
+                title: "Food E-commerce", 
+                desc: "Complete food sales platform.",
+                fullDesc: "Robust system for food delivery sales with real-time inventory and order management.",
+                tech: ["Java", "Spring Boot", "MySQL", "JWT", "Thymeleaf"],
+                features: ["Role-based user management", "Dynamic shopping cart", "Full admin panel", "JWT Security"]
+            },
+            dental: { 
+                title: "Dental Management", 
+                desc: "Comprehensive system for dental clinics.",
+                fullDesc: "Application for managing appointments, medical records, and interactive odontograms.",
+                tech: ["Java Web", "Servlets", "MySQL", "JSP", "Bootstrap"],
+                features: ["Dynamic odontogram", "Medical history management", "Appointment scheduling", "Report export"]
+            },
+            web: { 
+                title: "Web Development", 
+                desc: "Creation of a personal portfolio and services.",
+                fullDesc: "Design and development of modern, optimized websites.",
+                tech: ["HTML5", "CSS3", "JavaScript", "ScrollReveal", "Particles.js"],
+                features: ["Responsive design", "Advanced animations", "SEO Optimization", "Multi-language support"]
+            },
+            design: { 
+                title: "Graphic Design", 
+                desc: "Regional tourism advertising brochure.",
+                fullDesc: "Impactful visual design for regional brands and services.",
+                tech: ["Photoshop", "Illustrator", "Canva"],
+                features: ["Visual composition", "Color theory", "Print design", "Brand identity"]
+            },
+            desktop: { 
+                title: "Desktop Applications", 
+                desc: "Applications with Java, Swing, MySQL.",
+                fullDesc: "Local management software for various commercial sectors.",
+                tech: ["Java", "Swing", "MySQL", "JDBC"],
+                features: ["Local installers", "Persistent database", "User-friendly interfaces", "Inventory control"]
+            },
+            landing: { 
+                title: "Landing Page", 
+                desc: "Kinesiology office landing page.",
+                fullDesc: "Landing page optimized for local customer conversion.",
+                tech: ["HTML5", "CSS3", "JavaScript", "Netlify"],
+                features: ["Contact form", "Mobile-First design", "WhatsApp integration", "Fast loading"]
+            },
             viewCode: "View Code",
-            viewSite: "Live Demo"
+            viewSite: "Live Demo",
+            viewDetails: "Details"
         },
         contact: { title: "Contact", name: "Full Name", email: "E-mail", phone: "Phone Number", subject: "Email Subject", message: "Message", send: "Send" },
-        modal: { title: "Message Sent!", message: "Thanks for contacting me. I will reply shortly.", close: "Close" },
+        modal: { 
+            title: "Message Sent!", 
+            message: "Thanks for contacting me. I will reply shortly.", 
+            close: "Close",
+            features: "Key Features",
+            techStack: "Tech Stack"
+        },
         footer: { text: "Copyright &copy; 2024 by VK_Dev_Web | All Rights Reserved." },
         typed: ['Java Web Developer', 'Community Manager', 'Graphic Designer']
     },
@@ -364,4 +450,123 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    /* 7. Modal de Proyectos */
+    const projectModal = document.getElementById('project-modal');
+    const closeProjectModal = document.querySelector('.close-project-modal');
+
+    window.openProjectModal = function(projectId) {
+        const lang = localStorage.getItem('language') || 'es';
+        const project = translations[lang].projects[projectId];
+        
+        if (!project) return;
+
+        // Título y Descripción
+        document.getElementById('modal-title').innerText = project.title;
+        document.getElementById('modal-description').innerText = project.fullDesc;
+
+        // Tech Stack
+        const techContainer = document.getElementById('modal-tech');
+        techContainer.innerHTML = '';
+        project.tech.forEach(tech => {
+            const span = document.createElement('span');
+            span.className = 'tech-tag';
+            span.innerText = tech;
+            techContainer.appendChild(span);
+        });
+
+        // Features
+        const featuresList = document.getElementById('modal-features-list');
+        featuresList.innerHTML = '';
+        project.features.forEach(feature => {
+            const li = document.createElement('li');
+            li.innerHTML = `<i class='bx bx-check-circle'></i> ${feature}`;
+            featuresList.appendChild(li);
+        });
+
+        // Media (Clonar el video/imagen del portfolio box correspondiente)
+        const mediaContainer = document.getElementById('modal-media-container');
+        const originalBox = document.querySelector(`.Portfolio-box[data-project="${projectId}"]`);
+        if (originalBox) {
+            const media = originalBox.querySelector('video, img').cloneNode(true);
+            media.controls = true; // Activar controles en el modal si es video
+            media.autoplay = false;
+            mediaContainer.innerHTML = '';
+            mediaContainer.appendChild(media);
+        }
+
+        projectModal.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Evitar scroll de fondo
+    };
+
+    if (closeProjectModal) {
+        closeProjectModal.onclick = () => {
+            projectModal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        };
+    }
+
+    window.onclick = (event) => {
+        if (event.target == projectModal) {
+            projectModal.classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+    };
+
+    /* 8. Fondo de Partículas (Restaurado) */
+    if (document.getElementById('particles-js')) {
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#00d2ff" },
+                "shape": {
+                    "type": "circle",
+                    "stroke": { "width": 0, "color": "#000000" },
+                    "polygon": { "nb_sides": 5 }
+                },
+                "opacity": {
+                    "value": 0.6,
+                    "random": false,
+                    "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false }
+                },
+                "size": {
+                    "value": 5,
+                    "random": true,
+                    "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#00d2ff",
+                    "opacity": 0.5,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 3,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "grab" },
+                    "onclick": { "enable": true, "mode": "push" },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": { "distance": 140, "line_linked": { "opacity": 1 } },
+                    "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 },
+                    "repulse": { "distance": 200, "duration": 0.4 },
+                    "push": { "particles_nb": 4 },
+                    "remove": { "particles_nb": 2 }
+                }
+            },
+            "retina_detect": true
+        });
+    }
 });
