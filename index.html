@@ -119,27 +119,27 @@
             <div class="tecnologias-slider">
                 <div class="tecnologia-item">
                     <img src="IMG/HTML5_Logo.jpg" alt="Logo de HTML5" loading="lazy">
-                    <div class="descripcion" data-i18n="tech.html">Estructura web semántica</div>
+                    <div class="descripcion" data-i18n="tech.html">Estructura web semántica y SEO (Ej: tags &lt;main&gt;, &lt;article&gt;)</div>
                 </div>
                 <div class="tecnologia-item">
                     <img src="IMG/CSS_logo.jpg" alt="Logo de CSS3" loading="lazy">
-                    <div class="descripcion" data-i18n="tech.css">Estilos y diseño responsivo</div>
+                    <div class="descripcion" data-i18n="tech.css">Diseño responsivo y animaciones modernas (Ej: Flexbox, Grid, Keyframes)</div>
                 </div>
                 <div class="tecnologia-item">
                     <img src="IMG/JS_logo.jpg" alt="Logo de JavaScript" loading="lazy">
-                    <div class="descripcion" data-i18n="tech.js">Interactividad y lógica frontend</div>
+                    <div class="descripcion" data-i18n="tech.js">Interactividad dinámica y APIS (Ej: Event listeners, Fetch API)</div>
                 </div>
                 <div class="tecnologia-item">
                     <img src="IMG/Java_logo.jpg" alt="Logo de Java" loading="lazy">
-                    <div class="descripcion" data-i18n="tech.java">Desarrollo Backend robusto</div>
+                    <div class="descripcion" data-i18n="tech.java">Lógica de servidor y robustez (Ej: POO, Colecciones, Streams)</div>
                 </div>
                 <div class="tecnologia-item">
                     <img src="IMG/SpringBoot_logo.jpg" alt="Logo de Spring Boot" loading="lazy">
-                    <div class="descripcion" data-i18n="tech.springboot">Framework Java para microservicios</div>
+                    <div class="descripcion" data-i18n="tech.springboot">Microservicios y apps escalables (Ej: REST APIs, Security, JPA)</div>
                 </div>
                 <div class="tecnologia-item">
                     <img src="IMG/MySql_logo.jpg" alt="Logo de MySQL" loading="lazy">
-                    <div class="descripcion" data-i18n="tech.mysql">Gestión de bases de datos relacionales</div>
+                    <div class="descripcion" data-i18n="tech.mysql">Bases de datos eficientes y seguras (Ej: Queries SQL, Relaciones, Joins)</div>
                 </div>
             </div>
         </div>
@@ -150,7 +150,7 @@
     <section class="Portfolio" id="Portfolio">
         <h2 class="heading"> <span> Proyectos</span></h2>
         <div class="Portfolio-contenedor">
-            <div class="Portfolio-box">
+            <div class="Portfolio-box" data-project="ecommerce">
                 <video src="VIDEOS/ecommerce_project.mp4" poster="IMG/ecommerce_project.png" autoplay muted loop playsinline preload="metadata"></video>
                 <div class="Portfolio-layer">
                     <h4 data-i18n="projects.ecommerce.title">E-commerce Viandas</h4>
@@ -159,11 +159,14 @@
                         <a href="https://github.com/Viktor033" target="_blank" rel="noopener noreferrer" class="btn-sm" title="GitHub">
                             <i class='bx bxl-github'></i> <span data-i18n="projects.viewCode">Ver Código</span>
                         </a>
+                        <button class="btn-sm info-btn" onclick="openProjectModal('ecommerce')">
+                            <i class='bx bx-info-circle'></i> <span data-i18n="projects.viewDetails">Detalles</span>
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <div class="Portfolio-box">
+            <div class="Portfolio-box" data-project="dental">
                 <video src="VIDEOS/dental_project.mp4" poster="IMG/dental_project.png" autoplay muted loop playsinline preload="metadata"></video>
                 <div class="Portfolio-layer">
                     <h4 data-i18n="projects.dental.title">Gestión Odontológica</h4>
@@ -172,10 +175,13 @@
                         <a href="https://github.com/Viktor033" target="_blank" rel="noopener noreferrer" class="btn-sm" title="GitHub">
                             <i class='bx bxl-github'></i> <span data-i18n="projects.viewCode">Ver Código</span>
                         </a>
+                        <button class="btn-sm info-btn" onclick="openProjectModal('dental')">
+                            <i class='bx bx-info-circle'></i> <span data-i18n="projects.viewDetails">Detalles</span>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="Portfolio-box">
+            <div class="Portfolio-box" data-project="web">
                 <video src="VIDEOS/desarrollo_web.mp4" poster="IMG/PROGRAM.jpg" autoplay muted loop playsinline preload="metadata"></video>
                 <div class="Portfolio-layer">
                     <h4 data-i18n="projects.web.title">Desarrollo Web</h4>
@@ -185,19 +191,27 @@
                         <a href="https://github.com/Viktor033" target="_blank" rel="noopener noreferrer" class="btn-sm" title="GitHub">
                             <i class='bx bxl-github'></i> <span data-i18n="projects.viewCode">Ver Código</span>
                         </a>
+                        <button class="btn-sm info-btn" onclick="openProjectModal('web')">
+                            <i class='bx bx-info-circle'></i> <span data-i18n="projects.viewDetails">Detalles</span>
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <div class="Portfolio-box">
+            <div class="Portfolio-box" data-project="design">
                 <video src="VIDEOS/diseno_grafico.mp4" poster="IMG/FOLLETO.jpg" autoplay muted loop playsinline preload="metadata"></video>
                 <div class="Portfolio-layer">
                     <h4 data-i18n="projects.design.title">Diseño Grafico</h4>
                     <p data-i18n="projects.design.desc">Creacion de un folleto publicitario para una empresa de turismo regional</p>
+                    <div class="project-links">
+                        <button class="btn-sm info-btn" onclick="openProjectModal('design')">
+                            <i class='bx bx-info-circle'></i> <span data-i18n="projects.viewDetails">Detalles</span>
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <div class="Portfolio-box">
+            <div class="Portfolio-box" data-project="desktop">
                 <video src="VIDEOS/app_escritorio.mp4" poster="IMG/PELUQUERIA_CANINA.jpg" autoplay muted loop playsinline preload="metadata"></video>
                 <div class="Portfolio-layer">
                     <h4 data-i18n="projects.desktop.title">Aplicaciones de Escritorio</h4>
@@ -206,11 +220,14 @@
                         <a href="https://github.com/Viktor033" target="_blank" rel="noopener noreferrer" class="btn-sm" title="GitHub">
                             <i class='bx bxl-github'></i> <span data-i18n="projects.viewCode">Ver Código</span>
                         </a>
+                        <button class="btn-sm info-btn" onclick="openProjectModal('desktop')">
+                            <i class='bx bx-info-circle'></i> <span data-i18n="projects.viewDetails">Detalles</span>
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <div class="Portfolio-box">
+            <div class="Portfolio-box" data-project="landing">
                 <video src="VIDEOS/landing_page.mp4" poster="IMG/FRENTE-LOCAL.02.jpg" autoplay muted loop playsinline preload="metadata"></video>
             <div class="Portfolio-layer">
                 <h4 data-i18n="projects.landing.title">Landing Page</h4>
@@ -222,6 +239,9 @@
                     <a href="https://daialvarezkine.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-sm demo" title="Live Demo">
                         <i class='bx bx-link-external'></i> <span data-i18n="projects.viewSite">Ver Sitio</span>
                     </a>
+                    <button class="btn-sm info-btn" onclick="openProjectModal('landing')">
+                        <i class='bx bx-info-circle'></i> <span data-i18n="projects.viewDetails">Detalles</span>
+                    </button>
                 </div>
             </div>
             </div>
@@ -300,6 +320,25 @@
             <h3 data-i18n="modal.title">¡Mensaje Enviado!</h3>
             <p data-i18n="modal.message">Gracias por contactarme. Te responderé a la brevedad.</p>
             <button id="close-modal" class="btn" data-i18n="modal.close">Cerrar</button>
+        </div>
+    </div>
+
+    <!-- Modal de Detalles de Proyecto -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content project-modal-container">
+            <span class="close-project-modal">&times;</span>
+            <div class="modal-body-custom">
+                <div class="modal-media" id="modal-media-container"></div>
+                <div class="modal-info-custom">
+                    <h2 id="modal-title"></h2>
+                    <div class="tech-stack" id="modal-tech"></div>
+                    <p id="modal-description"></p>
+                    <div class="project-features">
+                        <h3 data-i18n="modal.features">Funcionalidades Clave</h3>
+                        <ul id="modal-features-list"></ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
