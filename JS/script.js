@@ -2,7 +2,7 @@
 const translations = {
     es: {
         nav: { home: "Inicio", about: "Sobre Mí", tech: "Tecnologías", projects: "Proyectos", contact: "Contacto" },
-        hero: { greeting: "Hola!! mi nombre es", role: "Soy", description: "HTML, CSS, Java, JavaScript, Swing, MySql, SpringBoot, Git, Photoshop, Canva" },
+        hero: { greeting: "Hola!! mi nombre es", role: "Soy", description: "Java, Spring Boot, Angular, MySQL, Groq, Google Calendar API, IA Generativa (Agentes AI), Git." },
         about: { title: "Sobre", subtitle: "¡Desarrollador Web FullStack!", text: "\"Soy Víctor, un desarrollador web de Argentina, apasionado por aprender y adaptarme a nuevas tecnologías. A pesar de tener Esclerosis Múltiple, sigo enfocado en mi crecimiento profesional. Este portfolio refleja mi dedicación y habilidades, y estoy listo para nuevos desafíos y proyectos innovadores.\" Gracias por visitar mi portafolio y ser parte de mi viaje en la tecnología y el desarrollo web. No dudes en ponerte en contacto para discutir cómo podemos colaborar o explorar nuevas oportunidades.", cv: "Descargar CV" },
         tech: { 
             title: "Tecnologías que manejo",
@@ -73,7 +73,7 @@ const translations = {
     },
     en: {
         nav: { home: "Home", about: "About Me", tech: "Tech Stack", projects: "Projects", contact: "Contact" },
-        hero: { greeting: "Hello!! my name is", role: "I am", description: "HTML, CSS, Java, JavaScript, Swing, MySQL, SpringBoot, Git, Photoshop, Canva" },
+        hero: { greeting: "Hello!! my name is", role: "I am", description: "Java, Spring Boot, Angular, MySQL, Groq, Google Calendar API, Generative AI (AI Agents), Git." },
         about: { title: "About", subtitle: "FullStack Web Developer!", text: "\"I'm Víctor, a web developer from Argentina, passionate about learning and adapting to new technologies. Despite having Multiple Sclerosis, I remain focused on my professional growth. This portfolio reflects my dedication and skills, and I am ready for new challenges and innovative projects.\" Thank you for visiting my portfolio and being part of my journey in technology and web development. Feel free to contact me to discuss how we can collaborate or explore new opportunities.", cv: "Download CV" },
         tech: { 
             title: "Technologies I use",
@@ -144,7 +144,7 @@ const translations = {
     },
     de: {
         nav: { home: "Start", about: "Über Mich", tech: "Technologien", projects: "Projekte", contact: "Kontakt" },
-        hero: { greeting: "Hallo!! mein Name ist", role: "Ich bin", description: "HTML, CSS, Java, JavaScript, Swing, MySQL, SpringBoot, Git, Photoshop, Canva" },
+        hero: { greeting: "Hallo!! mein Name ist", role: "Ich bin", description: "Java, Spring Boot, Angular, MySQL, Groq, Google Calendar API, Generative KI (KI-Agenten), Git." },
         about: { title: "Über", subtitle: "FullStack Webentwickler!", text: "\"Ich bin Víctor, ein Webentwickler aus Argentinien, leidenschaftlich daran interessiert, neue Technologien zu lernen. Trotz Multipler Sklerose bleibe ich auf mein berufliches Wachstum konzentriert. Dieses Portfolio spiegelt mein Engagement und meine Fähigkeiten wider, und ich bin bereit für neue Herausforderungen.\" Danke, dass Sie mein Portfolio besuchen. Zögern Sie nicht, mich zu kontaktieren, um zu besprechen, wie wir zusammenarbeiten können.", cv: "CV Herunterladen" },
         tech: { title: "Meine Technologien" },
         projects: {
@@ -164,7 +164,7 @@ const translations = {
     },
     fr: {
         nav: { home: "Accueil", about: "À Propos", tech: "Technologies", projects: "Projets", contact: "Contact" },
-        hero: { greeting: "Bonjour!! je m'appelle", role: "Je suis", description: "HTML, CSS, Java, JavaScript, Swing, MySQL, SpringBoot, Git, Photoshop, Canva" },
+        hero: { greeting: "Bonjour!! je m'appelle", role: "Je suis", description: "Java, Spring Boot, Angular, MySQL, Groq, Google Calendar API, IA Générative (Agents IA), Git." },
         about: { title: "À", subtitle: "Développeur Web FullStack!", text: "\"Je suis Víctor, un développeur web d'Argentine, passionné par l'apprentissage de nouvelles technologies. Malgré la sclérose en plaques, je reste concentré sur ma croissance professionnelle. Ce portfolio reflète mon dévouement et mes compétences, et je suis prêt pour de nouveaux défis.\" Merci de visiter mon portfolio. N'hésitez pas à me contacter pour discuter de la façon dont nous pouvons collaborer.", cv: "Télécharger CV" },
         tech: { title: "Technologies" },
         projects: {
