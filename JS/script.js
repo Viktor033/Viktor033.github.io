@@ -68,7 +68,12 @@ const translations = {
             features: "Funcionalidades Clave",
             techStack: "Stack Tecnológico"
         },
-        footer: { text: "Copyright &copy; 2024 by VK_Dev_Web | All Rights Reserved." },
+        footer: { 
+            text: "Copyright &copy; 2024 by VK_Dev_Web | All Rights Reserved.",
+            role: "FullStack Developer & AI Specialist",
+            links: "Enlaces Rápidos",
+            contact: "Contacto"
+        },
         typed: ['Desarrollador Web', 'Community Manager', 'Diseñador Gráfico']
     },
     en: {
@@ -139,7 +144,12 @@ const translations = {
             features: "Key Features",
             techStack: "Tech Stack"
         },
-        footer: { text: "Copyright &copy; 2024 by VK_Dev_Web | All Rights Reserved." },
+        footer: { 
+            text: "Copyright &copy; 2024 by VK_Dev_Web | All Rights Reserved.",
+            role: "FullStack Developer & AI Specialist",
+            links: "Quick Links",
+            contact: "Contact"
+        },
         typed: ['Web Developer', 'Community Manager', 'Graphic Designer']
     },
     de: {
