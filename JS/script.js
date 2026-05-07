@@ -69,7 +69,7 @@ const translations = {
             techStack: "Stack Tecnológico"
         },
         footer: { text: "Copyright &copy; 2024 by VK_Dev_Web | All Rights Reserved." },
-        typed: ['Desarrollador Java Web', 'Community Manager', 'Diseñador Gráfico']
+        typed: ['Desarrollador Web', 'Community Manager', 'Diseñador Gráfico']
     },
     en: {
         nav: { home: "Home", about: "About Me", tech: "Tech Stack", projects: "Projects", contact: "Contact" },
@@ -140,7 +140,7 @@ const translations = {
             techStack: "Tech Stack"
         },
         footer: { text: "Copyright &copy; 2024 by VK_Dev_Web | All Rights Reserved." },
-        typed: ['Java Web Developer', 'Community Manager', 'Graphic Designer']
+        typed: ['Web Developer', 'Community Manager', 'Graphic Designer']
     },
     de: {
         nav: { home: "Start", about: "Über Mich", tech: "Technologien", projects: "Projekte", contact: "Kontakt" },
@@ -160,7 +160,7 @@ const translations = {
         contact: { title: "Kontaktieren", name: "Vollständiger Name", email: "E-Mail", phone: "Telefonnummer", subject: "Betreff", message: "Nachricht", send: "Senden" },
         modal: { title: "Nachricht Gesendet!", message: "Danke für Ihre Nachricht. Ich werde mich in Kürze melden.", close: "Schließen" },
         footer: { text: "Copyright &copy; 2024 by VK_Dev_Web | Alle Rechte vorbehalten." },
-        typed: ['Java Webentwickler', 'Community Manager', 'Grafikdesigner']
+        typed: ['Webentwickler', 'Community Manager', 'Grafikdesigner']
     },
     fr: {
         nav: { home: "Accueil", about: "À Propos", tech: "Technologies", projects: "Projets", contact: "Contact" },
@@ -180,7 +180,7 @@ const translations = {
         contact: { title: "Contactez", name: "Nom complet", email: "E-mail", phone: "Numéro de téléphone", subject: "Sujet", message: "Message", send: "Envoyer" },
         modal: { title: "Message Envoyé!", message: "Merci de m'avoir contacté. Je vous répondrai sous peu.", close: "Fermer" },
         footer: { text: "Copyright &copy; 2024 by VK_Dev_Web | Tous droits réservés." },
-        typed: ['Développeur Java Web', 'Community Manager', 'Graphiste']
+        typed: ['Développeur Web', 'Community Manager', 'Graphiste']
     }
 };
 
@@ -392,63 +392,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    /* 6. Fondo de Partículas (Ajustado para mayor visibilidad) */
-    if (document.getElementById('particles-js')) {
-        particlesJS("particles-js", {
-            "particles": {
-                "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
-                "color": { "value": "#00d2ff" },
-                "shape": {
-                    "type": "circle",
-                    "stroke": { "width": 0, "color": "#000000" },
-                    "polygon": { "nb_sides": 5 }
-                },
-                "opacity": {
-                    "value": 0.6, /* Increased opacity */
-                    "random": false,
-                    "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false }
-                },
-                "size": {
-                    "value": 5, /* Increased size */
-                    "random": true,
-                    "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false }
-                },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 150,
-                    "color": "#00d2ff",
-                    "opacity": 0.5, /* Increased line opacity */
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 3,
-                    "direction": "none",
-                    "random": false,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 }
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": { "enable": true, "mode": "grab" },
-                    "onclick": { "enable": true, "mode": "push" },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": { "distance": 140, "line_linked": { "opacity": 1 } },
-                    "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 },
-                    "repulse": { "distance": 200, "duration": 0.4 },
-                    "push": { "particles_nb": 4 },
-                    "remove": { "particles_nb": 2 }
-                }
-            },
-            "retina_detect": true
-        });
-    }
 
     /* 7. Modal de Proyectos */
     const projectModal = document.getElementById('project-modal');

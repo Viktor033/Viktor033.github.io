@@ -868,19 +868,15 @@ span {
 
 @media (max-width: 991px) {
   .header {
-    padding: 2rem 3%;
+    padding: 2rem 4%;
   }
 
   section {
-    padding: 8rem 3% 2rem;
+    padding: 7rem 4% 2rem; /* Reducido para móviles */
   }
 
-  .servicios {
-    padding-bottom: 7rem;
-  }
-
-  .Portfolio {
-    padding-bottom: 7rem;
+  .servicios, .Portfolio, .SobreMi, .tecnologias {
+    padding-bottom: 5rem;
   }
 
   .Contacto {
@@ -998,7 +994,15 @@ span {
 
 @media (max-width: 450px) {
   html {
-    font-size: 55%;
+    font-size: 60%; /* Aumentado de 55% para mejor legibilidad */
+  }
+
+  .inicio-contenedor h1 {
+    font-size: 4rem; /* Más balanceado para móvil */
+  }
+
+  .inicio-contenedor h3 {
+    font-size: 2.2rem;
   }
 
   .Contacto form .input-box input {
