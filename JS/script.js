@@ -61,7 +61,7 @@ const translations = {
             viewSite: "Ver Sitio",
             viewDetails: "Detalles"
         },
-        contact: { title: "Contacta", name: "Nombre completo", email: "E-mail", phone: "Número de Teléfono", subject: "Asunto del Email", message: "Mensaje", send: "Enviar" },
+        contact: { title: "¡Contáctame!", name: "Nombre completo", email: "E-mail", phone: "Número de Teléfono", subject: "Asunto del Email", message: "Mensaje", send: "Enviar" },
         modal: { 
             title: "¡Mensaje Enviado!", 
             message: "Gracias por contactarme. Te responderé a la brevedad.", 
@@ -138,7 +138,7 @@ const translations = {
             viewSite: "Live Demo",
             viewDetails: "Details"
         },
-        contact: { title: "Contact", name: "Full Name", email: "E-mail", phone: "Phone Number", subject: "Email Subject", message: "Message", send: "Send" },
+        contact: { title: "Contact Me!", name: "Full Name", email: "E-mail", phone: "Phone Number", subject: "Email Subject", message: "Message", send: "Send" },
         modal: { 
             title: "Message Sent!", 
             message: "Thanks for contacting me. I will reply shortly.", 
@@ -169,7 +169,7 @@ const translations = {
             viewCode: "Code Ansehen",
             viewSite: "Webseite"
         },
-        contact: { title: "Kontaktieren", name: "Vollständiger Name", email: "E-Mail", phone: "Telefonnummer", subject: "Betreff", message: "Nachricht", send: "Senden" },
+        contact: { title: "Kontaktieren Sie mich!", name: "Vollständiger Name", email: "E-Mail", phone: "Telefonnummer", subject: "Betreff", message: "Nachricht", send: "Senden" },
         modal: { title: "Nachricht Gesendet!", message: "Danke für Ihre Nachricht. Ich werde mich in Kürze melden.", close: "Schließen" },
         footer: { 
             text: "Copyright &copy; 2024 by VK_Dev_Web | Alle Rechte vorbehalten.",
@@ -194,7 +194,7 @@ const translations = {
             viewCode: "Voir Code",
             viewSite: "Voir Site"
         },
-        contact: { title: "Contactez", name: "Nom complet", email: "E-mail", phone: "Numéro de téléphone", subject: "Sujet", message: "Message", send: "Envoyer" },
+        contact: { title: "Contactez-moi !", name: "Nom complet", email: "E-mail", phone: "Numéro de téléphone", subject: "Sujet", message: "Message", send: "Envoyer" },
         modal: { title: "Message Envoyé!", message: "Merci de m'avoir contacté. Je vous répondrai sous peu.", close: "Fermer" },
         footer: { 
             text: "Copyright &copy; 2024 by VK_Dev_Web | Tous droits réservés.",
