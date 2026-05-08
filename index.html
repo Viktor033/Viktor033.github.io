@@ -114,35 +114,113 @@
 
     <section class="tecnologias" id="tecnologias">
         <h2 class="heading" data-i18n="tech.title">Tecnologías que manejo</h2>
-        <div class="tecnologias-contenedor">
-            <div class="tecnologias-slider">
-                <div class="tecnologia-item">
-                    <img src="IMG/HTML5_Logo.jpg" alt="Logo de HTML5" loading="lazy">
-                    <div class="descripcion" data-i18n="tech.html">Estructura web semántica y SEO (Ej: tags &lt;main&gt;, &lt;article&gt;)</div>
-                </div>
-                <div class="tecnologia-item">
-                    <img src="IMG/CSS_logo.jpg" alt="Logo de CSS3" loading="lazy">
-                    <div class="descripcion" data-i18n="tech.css">Diseño responsivo y animaciones modernas (Ej: Flexbox, Grid, Keyframes)</div>
-                </div>
-                <div class="tecnologia-item">
-                    <img src="IMG/JS_logo.jpg" alt="Logo de JavaScript" loading="lazy">
-                    <div class="descripcion" data-i18n="tech.js">Interactividad dinámica y APIS (Ej: Event listeners, Fetch API)</div>
-                </div>
-                <div class="tecnologia-item">
-                    <img src="IMG/Java_logo.jpg" alt="Logo de Java" loading="lazy">
-                    <div class="descripcion" data-i18n="tech.java">Lógica de servidor y robustez (Ej: POO, Colecciones, Streams)</div>
-                </div>
-                <div class="tecnologia-item">
-                    <img src="IMG/SpringBoot_logo.jpg" alt="Logo de Spring Boot" loading="lazy">
-                    <div class="descripcion" data-i18n="tech.springboot">Microservicios y apps escalables (Ej: REST APIs, Security, JPA)</div>
-                </div>
-                <div class="tecnologia-item">
-                    <img src="IMG/MySql_logo.jpg" alt="Logo de MySQL" loading="lazy">
-                    <div class="descripcion" data-i18n="tech.mysql">Bases de datos eficientes y seguras (Ej: Queries SQL, Relaciones, Joins)</div>
+        
+        <div class="tech-container">
+            <!-- Frontend Group -->
+            <div class="tech-category">
+                <h3 class="category-title"><i class='bx bx-code-alt'></i> Frontend</h3>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-icon-box">
+                            <img src="IMG/HTML5_Logo.jpg" alt="HTML5" loading="lazy">
+                        </div>
+                        <div class="tech-info">
+                            <h4>HTML5</h4>
+                            <p data-i18n="tech.html">Estructura web semántica y SEO</p>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon-box">
+                            <img src="IMG/CSS_logo.jpg" alt="CSS3" loading="lazy">
+                        </div>
+                        <div class="tech-info">
+                            <h4>CSS3</h4>
+                            <p data-i18n="tech.css">Diseño responsivo y animaciones</p>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon-box">
+                            <img src="IMG/JS_logo.jpg" alt="JavaScript" loading="lazy">
+                        </div>
+                        <div class="tech-info">
+                            <h4>JavaScript</h4>
+                            <p data-i18n="tech.js">Interactividad dinámica y APIS</p>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon-box">
+                            <i class='bx bxl-angular' style="font-size: 5rem; color: #dd0031;"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h4>Angular</h4>
+                            <p>Framework para SPAs escalables</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- Backend Group -->
+            <div class="tech-category">
+                <h3 class="category-title"><i class='bx bx-server'></i> Backend & DB</h3>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <div class="tech-icon-box">
+                            <img src="IMG/Java_logo.jpg" alt="Java" loading="lazy">
+                        </div>
+                        <div class="tech-info">
+                            <h4>Java</h4>
+                            <p data-i18n="tech.java">Lógica de servidor y robustez</p>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon-box">
+                            <img src="IMG/SpringBoot_logo.jpg" alt="Spring Boot" loading="lazy">
+                        </div>
+                        <div class="tech-info">
+                            <h4>Spring Boot</h4>
+                            <p data-i18n="tech.springboot">Microservicios y apps escalables</p>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon-box">
+                            <img src="IMG/MySql_logo.jpg" alt="MySQL" loading="lazy">
+                        </div>
+                        <div class="tech-info">
+                            <h4>MySQL</h4>
+                            <p data-i18n="tech.mysql">Bases de datos eficientes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI & Innovation -->
+            <div class="tech-category">
+                <h3 class="category-title"><i class='bx bx-bot'></i> AI & Innovation</h3>
+                <div class="tech-grid ai-full">
+                    <div class="tech-card">
+                        <div class="tech-icon-box">
+                            <img src="IMG/ai_generative_icon.png" alt="Generative AI" loading="lazy">
+                        </div>
+                        <div class="tech-info">
+                            <h4>IA Generativa</h4>
+                            <p data-i18n="tech.ai">Agentes Inteligentes y Prompt Engineering</p>
+                        </div>
+                    </div>
+                    <div class="tech-card">
+                        <div class="tech-icon-box">
+                            <i class='bx bxl-git' style="font-size: 5rem; color: #f05032;"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h4>Git & GitHub</h4>
+                            <p>Control de versiones y colaboración</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
+
 
     <!-- Diseño Seccion Portfolio -->
 
@@ -169,7 +247,7 @@
                 <video src="VIDEOS/dental_project.mp4" poster="IMG/dental_project.png" autoplay muted loop playsinline preload="metadata"></video>
                 <div class="Portfolio-layer">
                     <h4 data-i18n="projects.dental.title">Gestión Odontológica</h4>
-                    <p data-i18n="projects.dental.desc">Sistema integral para clínicas dentales. Turnos, historia clínica digital y odontograma interactivo. (Java Web).</p>
+                    <p data-i18n="projects.dental.desc">Sistema integral para clínicas dentales desarrollado con React y Spring Boot. Turnos, historia clínica digital y odontograma interactivo.</p>
                     <div class="project-links">
                         <a href="https://github.com/Viktor033" target="_blank" rel="noopener noreferrer" class="btn-sm" title="GitHub">
                             <i class='bx bxl-github'></i> <span data-i18n="projects.viewCode">Ver Código</span>

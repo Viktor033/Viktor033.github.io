@@ -11,7 +11,8 @@ const translations = {
             js: "Interactividad dinámica y APIS (Ej: Event listeners, Fetch API)",
             java: "Lógica de servidor y robustez (Ej: POO, Colecciones, Streams)",
             springboot: "Microservicios y apps escalables (Ej: REST APIs, Security, JPA)",
-            mysql: "Bases de datos eficientes y seguras (Ej: Queries SQL, Relaciones, Joins)"
+            mysql: "Bases de datos eficientes y seguras (Ej: Queries SQL, Relaciones, Joins)",
+            ai: "Desarrollo de Agentes Inteligentes y Prompt Engineering"
         },
         projects: {
             ecommerce: { 
@@ -24,9 +25,9 @@ const translations = {
             dental: { 
                 title: "Gestión Odontológica", 
                 desc: "Sistema integral para clínicas dentales.",
-                fullDesc: "Aplicación para la gestión de turnos, historias clínicas y odontogramas interactivos.",
-                tech: ["Java Web", "Servlets", "MySQL", "JSP", "Bootstrap"],
-                features: ["Odontograma dinámico", "Gestión de historias clínicas", "Agenda de turnos", "Exportación de reportes"]
+                fullDesc: "Aplicación moderna para la gestión de turnos, historias clínicas y odontogramas interactivos desarrollada con una arquitectura desacoplada.",
+                tech: ["React", "Spring Boot", "MySQL", "REST API", "Bootstrap"],
+                features: ["Odontograma dinámico en React", "Gestión de historias clínicas", "Agenda de turnos inteligente", "Seguridad y roles de usuario"]
             },
             web: { 
                 title: "Desarrollo Web", 
@@ -87,7 +88,8 @@ const translations = {
             js: "Dynamic interactivity and APIs (Eg: Event listeners, Fetch API)",
             java: "Server logic and robustness (Eg: OOP, Collections, Streams)",
             springboot: "Microservices and scalable apps (Eg: REST APIs, Security, JPA)",
-            mysql: "Efficient and secure databases (Eg: SQL Queries, Relations, Joins)"
+            mysql: "Efficient and secure databases (Eg: SQL Queries, Relations, Joins)",
+            ai: "Development of Intelligent Agents and Prompt Engineering"
         },
         projects: {
             ecommerce: { 
@@ -100,9 +102,9 @@ const translations = {
             dental: { 
                 title: "Dental Management", 
                 desc: "Comprehensive system for dental clinics.",
-                fullDesc: "Application for managing appointments, medical records, and interactive odontograms.",
-                tech: ["Java Web", "Servlets", "MySQL", "JSP", "Bootstrap"],
-                features: ["Dynamic odontogram", "Medical history management", "Appointment scheduling", "Report export"]
+                fullDesc: "Modern application for managing appointments, medical records, and interactive odontograms developed with a decoupled architecture.",
+                tech: ["React", "Spring Boot", "MySQL", "REST API", "Bootstrap"],
+                features: ["Dynamic React odontogram", "Medical history management", "Smart appointment scheduling", "Security and user roles"]
             },
             web: { 
                 title: "Web Development", 
@@ -381,23 +383,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    /* 5. Tecnologías Slider y Video Hover (Lógica visual extra) */
-    const slider = document.querySelector('.tecnologias-slider');
-    if (slider) {
-        const clone = slider.innerHTML;
-        slider.innerHTML += clone;
+    /* 5. Tecnologías (Efectos sutiles si se desea, por ahora manejado por CSS) */
+    // La cuadrícula bento es estática y usa hover de CSS para efectos premium.
 
-        const tecnologiaItems = document.querySelectorAll('.tecnologia-item');
-        tecnologiaItems.forEach(item => {
-            item.addEventListener('mouseover', () => {
-                slider.style.animationPlayState = 'paused';
-            });
-
-            item.addEventListener('mouseout', () => {
-                slider.style.animationPlayState = 'running';
-            });
-        });
-    }
 
     const portfolioBoxes = document.querySelectorAll('.Portfolio-box');
     portfolioBoxes.forEach(box => {
