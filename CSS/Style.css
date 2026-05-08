@@ -449,41 +449,47 @@ span {
 }
 
 .tech-icon-box {
-  width: 70px;
-  height: 70px;
-  background: #ffffff; /* Fondo blanco para uniformidad */
-  border-radius: 1.5rem;
+  width: 90px;
+  height: 90px;
+  background: rgba(30, 31, 40, 0.7); /* Fondo oscuro elegante */
+  backdrop-filter: blur(10px);
+  border-radius: 1.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.2rem;
-  border: 1px solid rgba(0, 210, 255, 0.2);
+  padding: 1.5rem;
+  border: 1px solid rgba(0, 210, 255, 0.1);
   transition: 0.4s;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sutil sombra para profundidad */
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0; /* Evita que se encoja en pantallas pequeñas */
 }
 
 .tech-card:hover .tech-icon-box {
   transform: rotate(10deg);
   border-color: var(--main-color);
-  box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
+  background: rgba(30, 31, 40, 0.9);
+  box-shadow: 0 0 25px rgba(0, 210, 255, 0.2);
 }
 
 .tech-icon-box img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  mix-blend-mode: multiply; /* Mezcla el fondo blanco de los JPGs */
+  background: #ffffff;
+  padding: 0.6rem;
+  border-radius: 1rem;
   filter: grayscale(100%) opacity(0.8);
   transition: 0.4s;
 }
 
 .tech-icon-box i {
-  font-size: 4rem !important; /* Tamaño consistente para iconos de fuente */
+  font-size: 5.5rem !important; /* Aumentado para mejor visibilidad */
   display: flex;
   justify-content: center;
   align-items: center;
   filter: grayscale(100%) opacity(0.8);
   transition: 0.4s;
+  color: var(--main-color);
 }
 
 .tech-card:hover .tech-icon-box img,
