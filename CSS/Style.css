@@ -451,14 +451,15 @@ span {
 .tech-icon-box {
   width: 70px;
   height: 70px;
-  background: var(--bg-color);
+  background: #ffffff; /* Fondo blanco para uniformidad */
   border-radius: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1.2rem;
   border: 1px solid rgba(0, 210, 255, 0.2);
   transition: 0.4s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sutil sombra para profundidad */
 }
 
 .tech-card:hover .tech-icon-box {
@@ -467,21 +468,28 @@ span {
   box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
 }
 
-.tech-icon-box img,
-.tech-icon-box i {
+.tech-icon-box img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: grayscale(100%) brightness(1.2);
+  mix-blend-mode: multiply; /* Mezcla el fondo blanco de los JPGs */
+  filter: grayscale(100%) opacity(0.8);
   transition: 0.4s;
+}
+
+.tech-icon-box i {
+  font-size: 4rem !important; /* Tamaño consistente para iconos de fuente */
   display: flex;
   justify-content: center;
   align-items: center;
+  filter: grayscale(100%) opacity(0.8);
+  transition: 0.4s;
 }
 
 .tech-card:hover .tech-icon-box img,
 .tech-card:hover .tech-icon-box i {
-  filter: grayscale(0%) brightness(1);
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.1);
 }
 
 
