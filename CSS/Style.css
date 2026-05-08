@@ -476,25 +476,25 @@ span {
   height: 100%;
   object-fit: contain;
   background: #ffffff;
-  padding: 0.6rem;
+  padding: 0.5rem;
   border-radius: 1rem;
-  filter: grayscale(100%) opacity(0.8);
+  filter: saturate(0.8) opacity(0.8); /* Colores sutiles pero visibles */
   transition: 0.4s;
 }
 
 .tech-icon-box i {
-  font-size: 5.5rem !important; /* Aumentado para mejor visibilidad */
+  font-size: 5.5rem !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: grayscale(100%) opacity(0.8);
+  filter: saturate(0.8) opacity(0.8);
   transition: 0.4s;
-  color: var(--main-color);
+  /* Eliminado color fijo para respetar los colores de marca de Boxicons */
 }
 
 .tech-card:hover .tech-icon-box img,
 .tech-card:hover .tech-icon-box i {
-  filter: grayscale(0%) opacity(1);
+  filter: saturate(1.2) opacity(1); /* Resalta los colores al pasar el mouse */
   transform: scale(1.1);
 }
 
