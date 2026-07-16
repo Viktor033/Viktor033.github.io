@@ -240,7 +240,7 @@ section {
   font-size: 1.7rem;
   color: var(--text-color);
   margin-left: 4rem;
-  transition: 3s;
+  transition: 0.3s;
 }
 
 .navbar a:hover,
@@ -1028,7 +1028,7 @@ span {
     top: 100%;
     left: 0;
     width: 100%;
-    padding: 1re 3%;
+    padding: 1rem 3%;
     background: var(--bg-color);
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);

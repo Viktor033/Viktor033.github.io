@@ -158,19 +158,71 @@ const translations = {
         nav: { home: "Start", about: "Über Mich", tech: "Technologien", projects: "Projekte", contact: "Kontakt" },
         hero: { greeting: "Hallo!! mein Name ist", role: "Ich bin", description: "Java, Spring Boot, Angular, MySQL, Groq, Google Calendar API, Generative KI (KI-Agenten), Git." },
         about: { title: "Über", subtitle: "FullStack Webentwickler!", text: "\"Ich bin Víctor, ein Webentwickler aus Argentinien, leidenschaftlich daran interessiert, neue Technologien zu lernen. Trotz Multipler Sklerose bleibe ich auf mein berufliches Wachstum konzentriert. Dieses Portfolio spiegelt mein Engagement und meine Fähigkeiten wider, und ich bin bereit für neue Herausforderungen.\" Danke, dass Sie mein Portfolio besuchen. Zögern Sie nicht, mich zu kontaktieren, um zu besprechen, wie wir zusammenarbeiten können.", cv: "CV Herunterladen" },
-        tech: { title: "Meine Technologien" },
+        tech: { 
+            title: "Meine Technologien",
+            html: "Semantische Struktur und SEO (z.B. &lt;main&gt;, &lt;article&gt; Tags)",
+            css: "Responsive Design und moderne Animationen (z.B. Flexbox, Grid, Keyframes)",
+            js: "Dynamische Interaktivität und APIs (z.B. Event-Listener, Fetch-API)",
+            java: "Server-Logik und Robustheit (z.B. OOP, Collections, Streams)",
+            springboot: "Mikrodienste und skalierbare Apps (z.B. REST-APIs, Security, JPA)",
+            mysql: "Effiziente und sichere Datenbanken (z.B. SQL-Abfragen, Beziehungen, Joins)",
+            ai: "Entwicklung intelligenter Agenten und Prompt-Engineering"
+        },
         projects: {
-            ecommerce: { title: "E-Commerce Lebensmittel", desc: "Komplette Verkaufsplattform entwickelt mit Spring Boot und Java. Benutzerverwaltung, Warenkorb und Admin-Panel." },
-            dental: { title: "Zahnarztpraxis Management", desc: "Umfassendes System für Zahnkliniken. Termine, digitale Krankenakten und interaktives Odontogramm." },
-            web: { title: "Webentwicklung", desc: "Erstellung eines persönlichen Portfolios, das Arbeiten und Dienstleistungen zeigt." },
-            design: { title: "Grafikdesign", desc: "Erstellung einer Werbebroschüre für ein regionales Tourismusunternehmen." },
-            desktop: { title: "Desktop-Anwendungen", desc: "Desktop-Anwendungen mit Java, Swing, MySQL." },
-            landing: { title: "Landing Page", desc: "Landing Page für eine Kinesiologie-Praxis." },
+            ecommerce: { 
+                title: "E-Commerce Lebensmittel", 
+                desc: "Komplette Verkaufsplattform.",
+                fullDesc: "Robustes System für den Verkauf von Lebensmitteln mit Bestandsverwaltung und Bestellungen in Echtzeit.",
+                tech: ["Java", "Spring Boot", "MySQL", "JWT", "Thymeleaf"],
+                features: ["Rollenbasierte Benutzerverwaltung", "Dynamischer Warenkorb", "Komplettes Admin-Panel", "Sicherheit mit JWT"]
+            },
+            dental: { 
+                title: "Zahnarztpraxis-Management", 
+                desc: "Umfassendes System für Zahnkliniken.",
+                fullDesc: "Moderne Anwendung zur Verwaltung von Terminen, digitalen Krankenakten und interaktiven Odontogrammen mit einer entkoppelten Architektur.",
+                tech: ["React", "Spring Boot", "MySQL", "REST API", "Bootstrap"],
+                features: ["Dynamisches Odontogramm in React", "Verwaltung von Krankenakten", "Intelligente Terminplanung", "Sicherheits- und Benutzerrollen"]
+            },
+            web: { 
+                title: "Webentwicklung", 
+                desc: "Erstellung eines persönlichen Portfolios und Dienstleistungen.",
+                fullDesc: "Design und Entwicklung von modernen und optimierten Websites.",
+                tech: ["HTML5", "CSS3", "JavaScript", "ScrollReveal", "Particles.js"],
+                features: ["Responsive Design", "Fortgeschrittene Animationen", "SEO-Optimierung", "Mehrsprachige Unterstützung"]
+            },
+            design: { 
+                title: "Grafikdesign", 
+                desc: "Werbebroschüre für ein regionales Tourismusunternehmen.",
+                fullDesc: "Beeindruckendes visuelles Design für regionale Marken und Dienstleistungen.",
+                tech: ["Photoshop", "Illustrator", "Canva"],
+                features: ["Visuelle Komposition", "Farblehre", "Print-Design", "Markenidentität"]
+            },
+            desktop: { 
+                title: "Desktop-Anwendungen", 
+                desc: "Desktop-Anwendungen mit Java, Swing, MySQL.",
+                fullDesc: "Lokale Verwaltungssoftware für verschiedene kommerzielle Sektoren.",
+                tech: ["Java", "Swing", "MySQL", "JDBC"],
+                features: ["Lokale Installationsprogramme", "Persistente Datenbank", "Benutzerfreundliche Oberflächen", "Bestandsverwaltung"]
+            },
+            landing: { 
+                title: "Landingpage", 
+                desc: "Landingpage für eine Kinesiologie-Praxis.",
+                fullDesc: "Optimierte Landingpage zur Gewinnung lokaler Kunden.",
+                tech: ["HTML5", "CSS3", "JavaScript", "Netlify"],
+                features: ["Kontaktformular", "Mobile-First-Design", "WhatsApp-Integration", "Schnelle Ladezeit"]
+            },
             viewCode: "Code Ansehen",
-            viewSite: "Webseite"
+            viewSite: "Live-Demo",
+            viewDetails: "Details"
         },
         contact: { title: "Kontaktieren Sie mich!", name: "Vollständiger Name", email: "E-Mail", phone: "Telefonnummer", subject: "Betreff", message: "Nachricht", send: "Senden" },
-        modal: { title: "Nachricht Gesendet!", message: "Danke für Ihre Nachricht. Ich werde mich in Kürze melden.", close: "Schließen" },
+        modal: { 
+            title: "Nachricht Gesendet!", 
+            message: "Danke für Ihre Nachricht. Ich werde mich in Kürze melden.", 
+            close: "Schließen",
+            features: "Wichtigste Funktionen",
+            techStack: "Technologie-Stack"
+        },
         footer: { 
             text: "Copyright &copy; 2024 by VK_Dev_Web | Alle Rechte vorbehalten.",
             role: "FullStack-Entwickler & KI-Spezialist",
@@ -183,19 +235,71 @@ const translations = {
         nav: { home: "Accueil", about: "À Propos", tech: "Technologies", projects: "Projets", contact: "Contact" },
         hero: { greeting: "Bonjour!! je m'appelle", role: "Je suis", description: "Java, Spring Boot, Angular, MySQL, Groq, Google Calendar API, IA Générative (Agents IA), Git." },
         about: { title: "À", subtitle: "Développeur Web FullStack!", text: "\"Je suis Víctor, un développeur web d'Argentine, passionné par l'apprentissage de nouvelles technologies. Malgré la sclérose en plaques, je reste concentré sur ma croissance professionnelle. Ce portfolio reflète mon dévouement et mes compétences, et je suis prêt pour de nouveaux défis.\" Merci de visiter mon portfolio. N'hésitez pas à me contacter pour discuter de la façon dont nous pouvons collaborer.", cv: "Télécharger CV" },
-        tech: { title: "Technologies" },
+        tech: { 
+            title: "Technologies",
+            html: "Structure web sémantique et SEO (Ex: balises &lt;main&gt;, &lt;article&gt;)",
+            css: "Design adaptatif et animations modernes (Ex: Flexbox, Grid, Keyframes)",
+            js: "Interactivité dynamique et APIs (Ex: Event listeners, Fetch API)",
+            java: "Logique serveur et robustesse (Ex: POO, Collections, Streams)",
+            springboot: "Microservices et applications évolutives (Ex: REST APIs, Security, JPA)",
+            mysql: "Bases de données efficaces et sécurisées (Ex: Requêtes SQL, Relations, Joins)",
+            ai: "Développement d'agents intelligents et Prompt Engineering"
+        },
         projects: {
-            ecommerce: { title: "E-commerce Alimentaire", desc: "Plateforme de vente complète développée avec Spring Boot et Java. Gestion utilisateurs, panier et panneau admin." },
-            dental: { title: "Gestion Dentaire", desc: "Système complet pour cliniques dentaires. Rendez-vous, dossiers médicaux numériques et odontogramme interactif." },
-            web: { title: "Développement Web", desc: "Création d'un portfolio personnel, présentant les travaux et services offerts." },
-            design: { title: "Design Graphique", desc: "Création d'une brochure publicitaire pour une entreprise de tourisme régionale." },
-            desktop: { title: "Applications de Bureau", desc: "Applications de bureau utilisant les technologies Java, Swing, MySQL." },
-            landing: { title: "Landing Page", desc: "Page d'atterrissage pour un cabinet de kinésiologie." },
+            ecommerce: { 
+                title: "E-commerce Alimentaire", 
+                desc: "Plateforme de vente de repas.",
+                fullDesc: "Système robuste pour la vente de repas avec gestion des stocks et commandes en temps réel.",
+                tech: ["Java", "Spring Boot", "MySQL", "JWT", "Thymeleaf"],
+                features: ["Gestion des utilisateurs par rôles", "Panier d'achat dynamique", "Panneau d'administration complet", "Sécurité avec JWT"]
+            },
+            dental: { 
+                title: "Gestion Dentaire", 
+                desc: "Système complet pour cliniques dentaires.",
+                fullDesc: "Application moderne pour la gestion des rendez-vous, des dossiers médicaux et des odontogrammes interactifs développée avec une architecture découplée.",
+                tech: ["React", "Spring Boot", "MySQL", "REST API", "Bootstrap"],
+                features: ["Odontogramme dynamique en React", "Gestion des dossiers médicaux", "Planification intelligente des rendez-vous", "Sécurité et rôles des utilisateurs"]
+            },
+            web: { 
+                title: "Développement Web", 
+                desc: "Création d'un portfolio personnel et services.",
+                fullDesc: "Conception et développement de sites web modernes et optimisés.",
+                tech: ["HTML5", "CSS3", "JavaScript", "ScrollReveal", "Particles.js"],
+                features: ["Design adaptatif", "Animations avancées", "Optimisation SEO", "Support multilingue"]
+            },
+            design: { 
+                title: "Design Graphique", 
+                desc: "Brochure publicitaire touristique régionale.",
+                fullDesc: "Conception visuelle percutante pour les marques et services régionaux.",
+                tech: ["Photoshop", "Illustrator", "Canva"],
+                features: ["Composition visuelle", "Théorie des couleurs", "Design pour impression", "Identité de marque"]
+            },
+            desktop: { 
+                title: "Applications de Bureau", 
+                desc: "Applications de bureau avec Java, Swing, MySQL.",
+                fullDesc: "Logiciel de gestion locale pour différents secteurs commerciaux.",
+                tech: ["Java", "Swing", "MySQL", "JDBC"],
+                features: ["Installateurs locaux", "Base de données persistante", "Interfaces conviviales", "Contrôle des stocks"]
+            },
+            landing: { 
+                title: "Landing Page", 
+                desc: "Page d'atterrissage pour un cabinet de kinésithérapie.",
+                fullDesc: "Page d'atterrissage optimisée pour la conversion de clients locaux.",
+                tech: ["HTML5", "CSS3", "JavaScript", "Netlify"],
+                features: ["Formulaire de contact", "Design Mobile-First", "Intégration WhatsApp", "Chargement rapide"]
+            },
             viewCode: "Voir Code",
-            viewSite: "Voir Site"
+            viewSite: "Voir Site",
+            viewDetails: "Détails"
         },
         contact: { title: "Contactez-moi !", name: "Nom complet", email: "E-mail", phone: "Numéro de téléphone", subject: "Sujet", message: "Message", send: "Envoyer" },
-        modal: { title: "Message Envoyé!", message: "Merci de m'avoir contacté. Je vous répondrai sous peu.", close: "Fermer" },
+        modal: { 
+            title: "Message Envoyé!", 
+            message: "Merci de m'avoir contacté. Je vous répondrai sous peu.", 
+            close: "Fermer",
+            features: "Fonctionnalités Clés",
+            techStack: "Technologies Utilisées"
+        },
         footer: { 
             text: "Copyright &copy; 2024 by VK_Dev_Web | Tous droits réservés.",
             role: "Développeur FullStack & Spécialiste IA",
@@ -439,8 +543,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const originalBox = document.querySelector(`.Portfolio-box[data-project="${projectId}"]`);
         if (originalBox) {
             const media = originalBox.querySelector('video, img').cloneNode(true);
-            media.controls = true; // Activar controles en el modal si es video
-            media.autoplay = false;
+            if (media.tagName === 'VIDEO') {
+                media.controls = true; // Activar controles en el modal si es video
+                media.autoplay = false;
+            } else {
+                media.removeAttribute('controls');
+                media.removeAttribute('autoplay');
+                media.removeAttribute('loop');
+                media.removeAttribute('muted');
+            }
             mediaContainer.innerHTML = '';
             mediaContainer.appendChild(media);
         }
