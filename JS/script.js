@@ -15,6 +15,20 @@ const translations = {
             ai: "Desarrollo de Agentes Inteligentes y Prompt Engineering"
         },
         projects: {
+            shifty: {
+                title: "Shifty SaaS - Agenda Multi-Consultorio",
+                desc: "Plataforma SaaS multi-tenant para gestión de turnos con Bot de WhatsApp y pagos con Stripe.",
+                fullDesc: "Plataforma web enterprise nivel SaaS Multi-Consultorio (multi-tenant) para la gestión integral de turnos, agendas clínicas interactivas, profesionales, servicios, pacientes y facturación. Incluye Bot conversacional de WhatsApp para agendar/cancelar turnos, recordatorios automáticos y pasarela de pagos con Stripe Checkout.",
+                tech: ["Java 17", "Spring Boot 3", "React", "TypeScript", "MySQL", "Stripe API", "JWT"],
+                features: ["Arquitectura Multi-Tenant con Spring AOP y Hibernate Filters", "Bot conversacional de WhatsApp para reserva y cancelación", "Pasarela de pagos integrada con Stripe Checkout y Webhooks", "Agenda clínica interactiva y 5 temas dinámicos Glassmorphism"]
+            },
+            agenteInmo: {
+                title: "Agente IA Inmobiliario",
+                desc: "Agente conversacional en WhatsApp con IA para calificación de leads, búsqueda de propiedades y agenda de visitas.",
+                fullDesc: "Agente inteligente para el sector inmobiliario impulsado por Google Gemini API con Function Calling. Califica leads automáticamente, busca propiedades reales en la base de datos sin alucinar, coordina visitas y deriva a asesores humanos, integrando un simulador WhatsApp y panel de control comercial.",
+                tech: ["Node.js", "Express", "Google Gemini API", "Baileys (WhatsApp)", "SQLite", "JavaScript"],
+                features: ["Búsqueda estricta en base de datos mediante Function Calling", "Calificación automática de leads y agendamiento de visitas", "Integración con WhatsApp vía Baileys y simulador interactivo", "Panel comercial CRM para seguimiento de leads, propiedades y derivaciones"]
+            },
             ecommerce: { 
                 title: "E-commerce Viandas", 
                 desc: "Plataforma completa de venta de alimentos.",
@@ -92,6 +106,20 @@ const translations = {
             ai: "Development of Intelligent Agents and Prompt Engineering"
         },
         projects: {
+            shifty: {
+                title: "Shifty SaaS - Multi-Clinic Scheduler",
+                desc: "Multi-tenant SaaS appointment management platform with WhatsApp Bot and Stripe payments.",
+                fullDesc: "Enterprise-grade multi-clinic (multi-tenant) SaaS web platform for comprehensive management of appointments, interactive clinical schedules, professionals, services, patients, and billing. Includes a conversational WhatsApp Bot to book/cancel appointments, automated reminders, and Stripe Checkout payment integration.",
+                tech: ["Java 17", "Spring Boot 3", "React", "TypeScript", "MySQL", "Stripe API", "JWT"],
+                features: ["Multi-Tenant architecture with Spring AOP and Hibernate Filters", "Conversational WhatsApp Bot for booking and cancellation", "Integrated payment gateway with Stripe Checkout and Webhooks", "Interactive clinical schedule and 5 dynamic Glassmorphism themes"]
+            },
+            agenteInmo: {
+                title: "Real Estate AI Agent",
+                desc: "Conversational WhatsApp AI agent for lead qualification, property search, and visit scheduling.",
+                fullDesc: "Intelligent agent for the real estate sector powered by Google Gemini API with Function Calling. Automatically qualifies leads, searches real properties in the database without hallucinating, coordinates visits, and escalates to human agents, integrating a WhatsApp simulator and commercial CRM dashboard.",
+                tech: ["Node.js", "Express", "Google Gemini API", "Baileys (WhatsApp)", "SQLite", "JavaScript"],
+                features: ["Strict database search via Function Calling", "Automated lead qualification and visit scheduling", "WhatsApp integration via Baileys and interactive simulator", "Commercial CRM panel for tracking leads, properties, and handoffs"]
+            },
             ecommerce: { 
                 title: "Food E-commerce", 
                 desc: "Complete food sales platform.",
@@ -169,6 +197,20 @@ const translations = {
             ai: "Entwicklung intelligenter Agenten und Prompt-Engineering"
         },
         projects: {
+            shifty: {
+                title: "Shifty SaaS - Multi-Praxis-Terminsystem",
+                desc: "Mandantenfähige SaaS-Plattform zur Terminverwaltung mit WhatsApp-Bot und Stripe-Zahlungen.",
+                fullDesc: "Mandantenfähige Enterprise-SaaS-Webplattform für die umfassende Verwaltung von Terminen, interaktiven Praxisplänen, Fachkräften, Dienstleistungen, Patienten und Abrechnungen. Enthält einen konversationellen WhatsApp-Bot zum Buchen/Stornieren von Terminen, automatische Erinnerungen und Stripe Checkout.",
+                tech: ["Java 17", "Spring Boot 3", "React", "TypeScript", "MySQL", "Stripe API", "JWT"],
+                features: ["Multi-Tenant-Architektur mit Spring AOP und Hibernate-Filtern", "Konversationeller WhatsApp-Bot für Buchung und Stornierung", "Integriertes Zahlungsgateway mit Stripe Checkout und Webhooks", "Interaktiver Praxisplan und 5 dynamische Glassmorphism-Themes"]
+            },
+            agenteInmo: {
+                title: "KI-Immobilienagent",
+                desc: "Konversationeller WhatsApp-KI-Agent zur Lead-Qualifizierung, Immobiliensuche und Besichtigungsplanung.",
+                fullDesc: "Intelligenter Agent für den Immobiliensektor auf Basis der Google Gemini API mit Function Calling. Qualifiziert Leads automatisch, durchsucht reale Immobilien in der Datenbank ohne Halluzinationen, koordiniert Besichtigungen und leitet an menschliche Berater weiter, inklusive WhatsApp-Simulator und CRM-Dashboard.",
+                tech: ["Node.js", "Express", "Google Gemini API", "Baileys (WhatsApp)", "SQLite", "JavaScript"],
+                features: ["Strikte Datenbanksuche mittels Function Calling", "Automatische Lead-Qualifizierung und Besichtigungsplanung", "WhatsApp-Integration über Baileys und interaktiver Simulator", "Kommerzielles CRM-Panel zur Verfolgung von Leads und Immobilien"]
+            },
             ecommerce: { 
                 title: "E-Commerce Lebensmittel", 
                 desc: "Komplette Verkaufsplattform.",
@@ -246,6 +288,20 @@ const translations = {
             ai: "Développement d'agents intelligents et Prompt Engineering"
         },
         projects: {
+            shifty: {
+                title: "Shifty SaaS - Agenda Multi-Clinique",
+                desc: "Plateforme SaaS multi-tenant de gestion de rendez-vous avec Bot WhatsApp et paiements Stripe.",
+                fullDesc: "Plateforme web SaaS multi-clinique (multi-tenant) pour la gestion complète des rendez-vous, agendas cliniques interactifs, professionnels, services, patients et facturation. Inclut un Bot conversationnel WhatsApp pour réserver/annuler des rendez-vous, des rappels automatiques et Stripe Checkout.",
+                tech: ["Java 17", "Spring Boot 3", "React", "TypeScript", "MySQL", "Stripe API", "JWT"],
+                features: ["Architecture Multi-Tenant avec Spring AOP et filtres Hibernate", "Bot conversationnel WhatsApp pour réservation et annulation", "Passerelle de paiement intégrée avec Stripe Checkout et Webhooks", "Agenda clinique interactif et 5 thèmes dynamiques Glassmorphism"]
+            },
+            agenteInmo: {
+                title: "Agent IA Immobilier",
+                desc: "Agent conversationnel WhatsApp avec IA pour la qualification de prospects, recherche de biens et prise de rendez-vous.",
+                fullDesc: "Agent intelligent pour le secteur immobilier propulsé par l'API Google Gemini avec Function Calling. Qualifie automatiquement les prospects, recherche des biens réels dans la base de données sans halluciner, planifie des visites et transfère aux conseillers humains, avec simulateur WhatsApp et tableau de bord CRM.",
+                tech: ["Node.js", "Express", "Google Gemini API", "Baileys (WhatsApp)", "SQLite", "JavaScript"],
+                features: ["Recherche stricte en base de données via Function Calling", "Qualification automatique des prospects et planification de visites", "Intégration WhatsApp via Baileys et simulateur interactif", "Panneau CRM commercial pour le suivi des prospects et propriétés"]
+            },
             ecommerce: { 
                 title: "E-commerce Alimentaire", 
                 desc: "Plateforme de vente de repas.",
