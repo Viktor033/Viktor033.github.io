@@ -368,7 +368,56 @@ span {
 
 .SobreMi-Contenedor p {
   font-size: 1.6rem;
-  margin: 2rem 0 3rem;
+  margin: 2rem 0 2.2rem;
+  line-height: 1.7;
+}
+
+.about-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.highlight-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem 1.6rem;
+  background: rgba(30, 31, 40, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 210, 255, 0.25);
+  border-radius: 1.2rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--text-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+
+.highlight-badge i {
+  font-size: 1.9rem;
+  color: var(--main-color);
+}
+
+.highlight-badge:hover {
+  transform: translateY(-3px);
+  border-color: var(--main-color);
+  box-shadow: 0 6px 20px rgba(0, 210, 255, 0.2);
+}
+
+.highlight-badge.highlight-ai {
+  border-color: rgba(244, 3, 232, 0.35);
+}
+
+.highlight-badge.highlight-ai i {
+  color: #f403e8;
+}
+
+.highlight-badge.highlight-ai:hover {
+  border-color: #f403e8;
+  box-shadow: 0 6px 20px rgba(244, 3, 232, 0.25);
 }
 
 .tecnologias {
