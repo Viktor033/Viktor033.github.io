@@ -445,6 +445,12 @@ function changeLanguage(lang) {
     document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
     document.querySelector(`.lang-btn[onclick="changeLanguage('${lang}')"]`).classList.add('active');
 
+    // Actualizar enlace de descarga del CV según idioma (ES -> Español, EN/DE/FR -> Inglés)
+    const cvBtn = document.getElementById('cv-download-btn');
+    if (cvBtn) {
+        cvBtn.setAttribute('href', lang === 'es' ? 'CV_Victor_Duarte.pdf' : 'CV_Victor_Duarte_EN.pdf');
+    }
+
     // Actualizar Typed.js
     if (typedInstance) {
         typedInstance.destroy();
