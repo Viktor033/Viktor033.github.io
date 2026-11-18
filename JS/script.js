@@ -445,10 +445,18 @@ function changeLanguage(lang) {
     document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
     document.querySelector(`.lang-btn[onclick="changeLanguage('${lang}')"]`).classList.add('active');
 
-    // Actualizar enlace de descarga del CV según idioma (ES -> Español, EN/DE/FR -> Inglés)
+    // Actualizar enlace de descarga del CV exactamente en el idioma activo (ES, EN, DE, FR)
     const cvBtn = document.getElementById('cv-download-btn');
     if (cvBtn) {
-        cvBtn.setAttribute('href', lang === 'es' ? 'CV_Victor_Duarte.pdf' : 'CV_Victor_Duarte_EN.pdf');
+        const cvFiles = {
+            es: 'CV_Victor_Duarte.pdf',
+            en: 'CV_Victor_Duarte_EN.pdf',
+            de: 'CV_Victor_Duarte_DE.pdf',
+            fr: 'CV_Victor_Duarte_FR.pdf'
+        };
+        const targetCv = cvFiles[lang] || 'CV_Victor_Duarte.pdf';
+        cvBtn.setAttribute('href', targetCv);
+        cvBtn.setAttribute('download', targetCv);
     }
 
     // Actualizar Typed.js
