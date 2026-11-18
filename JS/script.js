@@ -9,10 +9,21 @@ const translations = {
             html: "Estructura web semántica y SEO (Ej: tags &lt;main&gt;, &lt;article&gt;)",
             css: "Diseño responsivo y animaciones modernas (Ej: Flexbox, Grid, Keyframes)",
             js: "Interactividad dinámica y APIS (Ej: Event listeners, Fetch API)",
+            angular: "Framework para SPAs empresariales y escalables",
+            ts: "Tipado estático para código robusto y mantenible",
+            react: "Interfaces de usuario reactivas y componentes modernos",
+            tailwind: "Estilizado moderno utility-first y diseño adaptable",
             java: "Lógica de servidor y robustez (Ej: POO, Colecciones, Streams)",
             springboot: "Microservicios y apps escalables (Ej: REST APIs, Security, JPA)",
+            node: "Backend asíncrono, APIs REST y bots en tiempo real",
             mysql: "Bases de datos eficientes y seguras (Ej: Queries SQL, Relaciones, Joins)",
-            ai: "Desarrollo de Agentes Inteligentes y Prompt Engineering"
+            sql: "Persistencia relacional multi-tenant y bases embebidas",
+            security: "Autenticación stateless, control de roles y protección de APIs",
+            ai: "Agentes Inteligentes, Gemini API, Groq, Spring AI y Function Calling",
+            whatsapp: "Automatización conversacional (Baileys) y Google Calendar API",
+            payments: "Integración de pasarelas de pago, Checkout y Webhooks",
+            docker: "Contenedorización y despliegue en Easypanel y Netlify",
+            git: "Control de versiones, flujos de ramas y colaboración"
         },
         projects: {
             shifty: {
@@ -100,10 +111,21 @@ const translations = {
             html: "Semantic structure and SEO (Eg: &lt;main&gt;, &lt;article&gt; tags)",
             css: "Responsive design and animations (Eg: Flexbox, Grid, Keyframes)",
             js: "Dynamic interactivity and APIs (Eg: Event listeners, Fetch API)",
+            angular: "Framework for scalable enterprise SPAs",
+            ts: "Static typing for robust and maintainable code",
+            react: "Reactive user interfaces and modern components",
+            tailwind: "Modern utility-first styling and adaptive design",
             java: "Server logic and robustness (Eg: OOP, Collections, Streams)",
             springboot: "Microservices and scalable apps (Eg: REST APIs, Security, JPA)",
+            node: "Asynchronous backend, REST APIs, and real-time bots",
             mysql: "Efficient and secure databases (Eg: SQL Queries, Relations, Joins)",
-            ai: "Development of Intelligent Agents and Prompt Engineering"
+            sql: "Multi-tenant relational persistence and embedded databases",
+            security: "Stateless authentication, role-based access, and API protection",
+            ai: "Intelligent Agents, Gemini API, Groq, Spring AI, and Function Calling",
+            whatsapp: "Conversational automation (Baileys) and Google Calendar API",
+            payments: "Payment gateway integration, Checkout, and Webhooks",
+            docker: "Containerization and cloud deployment on Easypanel and Netlify",
+            git: "Version control, branching workflows, and collaboration"
         },
         projects: {
             shifty: {
@@ -191,10 +213,21 @@ const translations = {
             html: "Semantische Struktur und SEO (z.B. &lt;main&gt;, &lt;article&gt; Tags)",
             css: "Responsive Design und moderne Animationen (z.B. Flexbox, Grid, Keyframes)",
             js: "Dynamische Interaktivität und APIs (z.B. Event-Listener, Fetch-API)",
+            angular: "Framework für skalierbare Enterprise-SPAs",
+            ts: "Statische Typisierung für robusten und wartbaren Code",
+            react: "Reaktive Benutzeroberflächen und moderne Komponenten",
+            tailwind: "Modernes Utility-First-Styling und adaptives Design",
             java: "Server-Logik und Robustheit (z.B. OOP, Collections, Streams)",
             springboot: "Mikrodienste und skalierbare Apps (z.B. REST-APIs, Security, JPA)",
+            node: "Asynchrones Backend, REST-APIs und Echtzeit-Bots",
             mysql: "Effiziente und sichere Datenbanken (z.B. SQL-Abfragen, Beziehungen, Joins)",
-            ai: "Entwicklung intelligenter Agenten und Prompt-Engineering"
+            sql: "Mandantenfähige relationale Persistenz und eingebettete Datenbanken",
+            security: "Stateless-Authentifizierung, Rollenkontrolle und API-Schutz",
+            ai: "Intelligente Agenten, Gemini API, Groq, Spring AI und Function Calling",
+            whatsapp: "Konversationelle Automatisierung (Baileys) und Google Calendar API",
+            payments: "Integration von Zahlungsgateways, Checkout und Webhooks",
+            docker: "Containerisierung und Cloud-Deployment auf Easypanel und Netlify",
+            git: "Versionskontrolle, Branch-Workflows und Zusammenarbeit"
         },
         projects: {
             shifty: {
@@ -282,10 +315,21 @@ const translations = {
             html: "Structure web sémantique et SEO (Ex: balises &lt;main&gt;, &lt;article&gt;)",
             css: "Design adaptatif et animations modernes (Ex: Flexbox, Grid, Keyframes)",
             js: "Interactivité dynamique et APIs (Ex: Event listeners, Fetch API)",
+            angular: "Framework pour SPAs d'entreprise évolutives",
+            ts: "Typage statique pour un code robuste et maintenable",
+            react: "Interfaces utilisateur réactives et composants modernes",
+            tailwind: "Stylisation moderne utility-first et design adaptatif",
             java: "Logique serveur et robustesse (Ex: POO, Collections, Streams)",
             springboot: "Microservices et applications évolutives (Ex: REST APIs, Security, JPA)",
+            node: "Backend asynchrone, APIs REST et bots en temps réel",
             mysql: "Bases de données efficaces et sécurisées (Ex: Requêtes SQL, Relations, Joins)",
-            ai: "Développement d'agents intelligents et Prompt Engineering"
+            sql: "Persistance relationnelle multi-tenant et bases embarquées",
+            security: "Authentification stateless, contrôle des rôles et protection des APIs",
+            ai: "Agents Intelligents, Gemini API, Groq, Spring AI et Function Calling",
+            whatsapp: "Automatisation conversationnelle (Baileys) et Google Calendar API",
+            payments: "Intégration de passerelles de paiement, Checkout et Webhooks",
+            docker: "Conteneurisation et déploiement cloud sur Easypanel et Netlify",
+            git: "Contrôle de version, flux de branches et collaboration"
         },
         projects: {
             shifty: {
