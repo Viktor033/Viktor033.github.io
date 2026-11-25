@@ -26,6 +26,13 @@ const translations = {
             git: "Control de versiones, flujos de ramas y colaboración"
         },
         projects: {
+            farmacia: {
+                title: "FarmaciaControl - Gestión Farmacéutica & POS",
+                desc: "Sistema integral para farmacias con Punto de Venta (POS), trazabilidad FEFO/ANMAT, Obras Sociales y arqueo de caja en tiempo real.",
+                fullDesc: "Solución web moderna para optimizar la administración, el control de inventario sanitario y la dispensación en mostrador de farmacias. Incluye vademécum con clasificación sanitaria (Venta Libre, Bajo Receta, Receta Archivada), rotación automática de lotes FEFO (First Expired, First Out), descuentos por Obras Sociales y emisión de tickets fiscales.",
+                tech: ["HTML5", "Tailwind CSS", "JavaScript ES6+", "Web Audio API", "LocalStorage DB", "Netlify"],
+                features: ["Mostrador POS con escáner de código de barras EAN-13 y sonido", "Control de lotes y vencimientos con algoritmo automático FEFO/ANMAT", "Liquidación automática de Obras Sociales (PAMI, OSDE, Swiss Medical, IOMA)", "Múltiples medios de pago (Efectivo, Mercado Pago QR, Tarjetas) y Cierre X/Z"]
+            },
             shifty: {
                 title: "Shifty SaaS - Agenda Multi-Consultorio",
                 desc: "Plataforma SaaS multi-tenant para gestión de turnos con Bot de WhatsApp y pagos con Stripe.",
@@ -128,6 +135,13 @@ const translations = {
             git: "Version control, branching workflows, and collaboration"
         },
         projects: {
+            farmacia: {
+                title: "FarmaciaControl - Pharmacy Management & POS",
+                desc: "Comprehensive pharmacy system with Point of Sale (POS), FEFO/ANMAT batch traceability, health insurance discounts, and real-time cash register.",
+                fullDesc: "Modern web solution designed to optimize pharmacy administration, healthcare inventory control, and counter dispensing. Features a pharmaceutical vademecum with prescription safety classifications, automated FEFO (First Expired, First Out) batch rotation, health insurance co-pay calculations, and thermal receipt printing.",
+                tech: ["HTML5", "Tailwind CSS", "JavaScript ES6+", "Web Audio API", "LocalStorage DB", "Netlify"],
+                features: ["High-speed POS counter with EAN-13 barcode scanner and audio feedback", "Automated FEFO batch & expiration date control with health alerts", "Health insurance discount engine (PAMI, OSDE, Swiss Medical, IOMA)", "Multi-payment checkout (Cash change calculator, QR, Cards) & shift closing"]
+            },
             shifty: {
                 title: "Shifty SaaS - Multi-Clinic Scheduler",
                 desc: "Multi-tenant SaaS appointment management platform with WhatsApp Bot and Stripe payments.",
@@ -230,6 +244,13 @@ const translations = {
             git: "Versionskontrolle, Branch-Workflows und Zusammenarbeit"
         },
         projects: {
+            farmacia: {
+                title: "FarmaciaControl - Apothekenverwaltung & POS",
+                desc: "Umfassendes Apothekensystem mit Kassensystem (POS), FEFO-Chargenrückverfolgbarkeit, Krankenkassenabrechnung und Echtzeit-Kassenabschluss.",
+                fullDesc: "Moderne Weblösung zur Optimierung der Apothekenverwaltung, der Bestandskontrolle von Arzneimitteln und des Verkaufs am Schalter. Umfasst ein Arzneimittelverzeichnis mit Verschreibungsklassifizierung, automatische FEFO-Chargenrotation (First Expired, First Out), Krankenkassenrabatte und Belegdruck.",
+                tech: ["HTML5", "Tailwind CSS", "JavaScript ES6+", "Web Audio API", "LocalStorage DB", "Netlify"],
+                features: ["Schnelles POS-Kassensystem mit EAN-13-Barcodescanner und Audio-Feedback", "Automatische FEFO-Chargen- und Verfallsdatumskontrolle mit Warnmeldungen", "Automatische Rabattberechnung für Krankenkassen (PAMI, OSDE, Swiss Medical)", "Mehrere Zahlungsmethoden (Bargeldrechner, QR, Karten) & Schichtabschluss"]
+            },
             shifty: {
                 title: "Shifty SaaS - Multi-Praxis-Terminsystem",
                 desc: "Mandantenfähige SaaS-Plattform zur Terminverwaltung mit WhatsApp-Bot und Stripe-Zahlungen.",
@@ -332,6 +353,13 @@ const translations = {
             git: "Contrôle de version, flux de branches et collaboration"
         },
         projects: {
+            farmacia: {
+                title: "FarmaciaControl - Gestion de Pharmacie & POS",
+                desc: "Système complet pour pharmacies avec Point de Vente (POS), traçabilité des lots FEFO, mutuelles de santé et clôture de caisse en temps réel.",
+                fullDesc: "Solution web moderne conçue pour optimiser l'administration des pharmacies, le contrôle des stocks de médicaments et la dispensation au comptoir. Intègre un vadémécum avec classification des ordonnances, rotation automatique des lots FEFO (First Expired, First Out), remises mutuelles et impression de tickets.",
+                tech: ["HTML5", "Tailwind CSS", "JavaScript ES6+", "Web Audio API", "LocalStorage DB", "Netlify"],
+                features: ["Comptoir POS haute vitesse avec lecteur code-barres EAN-13 et retour sonore", "Contrôle automatisé des lots et dates d'expiration selon la norme FEFO", "Calcul automatique des remises d'assurance maladie (PAMI, OSDE, Swiss Medical)", "Paiements multiples (Calculateur de monnaie, QR, Cartes) et clôture de caisse"]
+            },
             shifty: {
                 title: "Shifty SaaS - Agenda Multi-Clinique",
                 desc: "Plateforme SaaS multi-tenant de gestion de rendez-vous avec Bot WhatsApp et paiements Stripe.",
